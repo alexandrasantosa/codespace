@@ -23,11 +23,8 @@ function aposts(){
 }
 
 
-/*3-5*/
 
-function changecolor(e) {
-document.body.style.backgroundColor = e.value;
-}
+
 
 
 /*3-3 */
