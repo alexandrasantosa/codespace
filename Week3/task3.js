@@ -30,11 +30,6 @@ document.body.style.backgroundColor = e.value;
 }
 
 
-/*3-4*/
-function changecolor_input(){
-  if
-}
-
 /*3-3 */
 function openmenu()
 
