@@ -22,6 +22,12 @@ function aposts(){
 
 }
 
+function remove_post{
+  var myobj = document.getElementById("demo");
+  myobj.remove();
+}
+
+
 
 
 
