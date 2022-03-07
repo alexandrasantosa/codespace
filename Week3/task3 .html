@@ -13,18 +13,21 @@
     <body>
 
         <div id="main" class="container">
-            <button class="right">MENU</button>
+            <button class="right" onclick="openmenu()">MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
-            <div id="mcount"></div>
-            <div id="posts"></div>
-            <hr />
-            <textarea rows="4" cols="60">Type your text here...</textarea>
+            <div id="mcount" onmouseover="mouseOverFunction()"></div>
+            <div id="posts" >
+
+            </div>
+            <hr/>
+            <textarea id="textarea" rows="4" cols="60">Type your text here..
+            </textarea>
             <br />
             <div class="controls left">
                 <input type="number" name="quantity" value="1" /><br />
                 <input type="radio" name="color" value="blue" /> Blue<br />
                 <input type="radio" name="color" value="red" /> Red<br />
-                <button>Post</button>
+                <button type="button" onclick="aposts()">Post</button>
             </div>
             <div class="controls left">
                 <input type="range" name="visible" min="1" max="10" value="10"/><br />
@@ -38,11 +41,12 @@
         </div>
 
         <div id="menu" class="container" style="display:none;">
-            <button class="right">BACK</button>
+            <button class="right" onclick="backmenu()">BACK</button>
             <p>&nbsp;</p>
-            <span>Background Color:</span><input type="text">
+            <span>Background Color:</span><input type="text" onchange="changecolor(this)">
         </div>
 
     </body>
 
 </html>
+s
