@@ -24,7 +24,7 @@ function aposts(){
 }
 
 function remove_post(){
-  var myobj = document.getElementById("textarea");
+  var myobj = document.getElementById("posts");
   myobj.remove();
 }
 
