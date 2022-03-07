@@ -17,13 +17,14 @@ function aposts(){
   x.innerHTML= new Date();
   y.innerHTML=tarea;
 
+
   document.getElementById("posts").appendChild(x);
   document.getElementById("posts").appendChild(y);
 
 }
 
-function remove_post{
-  var myobj = document.getElementById("demo");
+function remove_post(){
+  var myobj = document.getElementById("textarea");
   myobj.remove();
 }
 
