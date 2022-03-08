@@ -24,9 +24,19 @@
 }
 
 
+html{
+    height:100vh;
+
+}
+
 body{
     font-family:sans-serif;
+    margin:0;
+    padding:0;
+    height:100vh;
+
 }
+
 
 main{
     clear:both;
