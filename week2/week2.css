@@ -40,8 +40,9 @@ body{
 
 main{
     clear:both;
-    margin-top:50vh;
-    text-allign:center;
+    position:relative;
+    top:25vh;
+    text-align:center;
 }
 
 hr{
@@ -57,4 +58,10 @@ footer{
 
 #logo{
     width:20em;
+}
+
+input[name=q]{
+    border:1px solid grey;
+    border-radius:2em;
+    padding:0.5em;
 }
