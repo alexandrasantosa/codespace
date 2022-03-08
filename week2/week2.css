@@ -41,11 +41,20 @@ body{
 main{
     clear:both;
     margin-top:50vh;
+    text-allign:center;
 }
 
+hr{
+    clear:both;
+}
 
 footer{
-    position:50vh;
+    position:fixed;
+    width:100%;
     bottom:0;
-    background-color:grey;
+    background-color:#dddddd;
+}
+
+#logo{
+    width:20em;
 }
