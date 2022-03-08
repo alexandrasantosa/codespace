@@ -27,3 +27,8 @@
 body{
     font-family:sans-serif;
 }
+
+main{
+    clear:both;
+    margin-top:25vh;
+}
