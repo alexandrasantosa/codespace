@@ -6,6 +6,19 @@
     float:right;
 }
 
-.menuitem{
+.menuitem span {
     padding:1em;
+}
+
+.menuitem button {
+    padding:0.5em;
+    margin:0.5em;
+    background-color:#0022EE;
+    border:1px;
+    border-radius=0.1em;
+}
+
+
+body{
+    font-family:sans-serif;
 }
