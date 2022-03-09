@@ -29,11 +29,6 @@ function remove_post(){
 }
 
 
-
-
-
-
-
 /*3-3 */
 function openmenu()
 
