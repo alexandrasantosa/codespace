@@ -1,0 +1,4 @@
+"file:/workspaces/55374103/WDC/prac2/validatethis1.html":1.1-1.17: error: Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”.
+"file:/workspaces/55374103/WDC/prac2/validate.css":1.1-6.1: error: Non-space characters found without seeing a doctype first. Expected “<!DOCTYPE html>”.
+"file:/workspaces/55374103/WDC/prac2/validate.css":1.1-6.1: error: Element “head” is missing a required instance of child element “title”.
+"file:/workspaces/55374103/WDC/prac2/validate.css":1.1-6.1: info warning: Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
