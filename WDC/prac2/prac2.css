@@ -1,3 +1,26 @@
 h1 {
     font-family:Arial,Helvetica,sans-serif;
 }
+
+
+h2 {
+    font-family:Arial,Helvetica,sans-serif;
+    text-align: left;
+}
+
+pre{
+    font-family:monospace;
+}
+
+mark{
+     background-color:pink;
+     color:darkblue;
+}
+
+a{
+    color:darkgreen;
+}
+
+del{
+    color:grey;
+}
