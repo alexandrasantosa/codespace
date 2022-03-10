@@ -50,22 +50,23 @@ body{
 }
 
 h2.hl3 {
-    font-family:'Raleway',sans-serif;;
+    font-family:'Raleway',sans-serif;
 }
 h4.hl4{
-    font-family:'Raleway';
+    font-family:'Raleway',sans-serif;
     font-weight: normal;
     text-decoration: underline;
     font-style: italic;
 }
 .p8{
-    font-family:'Noto Serif';
+    font-family:'Noto Serif',sans-serif;
 
 }
 
 i{
 
     color:#BFCFD4;
+    
 }
 
 
