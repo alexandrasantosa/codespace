@@ -63,11 +63,10 @@ h4.hl4{
 
 }
 
-.twitter::before {
-    font-family: "Font Awesome 5 Brands";
-	font-weight: 400;
-	content: "\f099";
+i.fa-brands fa-facebook-f{
+    color:#BFCFD4;
 }
+
 
 .pre1{
     font-family:'Raleway';
