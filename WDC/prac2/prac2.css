@@ -48,3 +48,11 @@ body{
     font-weight:bold;
     font-family:'Raleway';
 }
+
+.fancy{
+    font-family:cursive;
+}
+
+.blue{
+    color:blue;
+}
