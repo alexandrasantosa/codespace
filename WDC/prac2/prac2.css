@@ -72,10 +72,11 @@ body{
 }
 .left{
     background-color:white;
-    margin:auto;
     float:left;
-    overflow:auto;
+    overflow:scroll;
+    height:400px;
 }
+
 
 .satu{
     text-align:center;
