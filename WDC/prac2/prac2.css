@@ -60,12 +60,15 @@ body{
 .content{
     background-color:white;
 
+
 }
 .content2{
     background-color:white;
     margin:auto;
     width:60%;
     padding:10px;
+    border-radius:8px;
+    border:1px solid darkgrey;
 }
 .left{
     background-color:white;
