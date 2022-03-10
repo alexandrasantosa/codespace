@@ -44,3 +44,7 @@ body{
     background-image:url("cross.png");
 }
 
+.hl2{
+    font-weight:bold;
+    font-family:'Raleway';
+}
