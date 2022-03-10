@@ -62,22 +62,3 @@ body{
 
 
 }
-.content2{
-    background-color:white;
-    margin:auto;
-    width:60%;
-    padding:10px;
-    border-radius:8px;
-    border:1px solid darkgrey;
-}
-.left{
-    background-color:white;
-    float:left;
-    overflow:scroll;
-    height:400px;
-}
-
-
-.satu{
-    text-align:center;
-}
