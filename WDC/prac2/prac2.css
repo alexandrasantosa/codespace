@@ -46,11 +46,11 @@ body{
 
 .hl2{
     font-weight:bold;
-    font-family:'Raleway';
+    font-family:'Raleway',sans-serif;
 }
 
 h2.hl3 {
-    font-family:'Raleway';
+    font-family:'Raleway',sans-serif;;
 }
 h4.hl4{
     font-family:'Raleway';
@@ -64,7 +64,7 @@ h4.hl4{
 }
 
 i{
-    
+
     color:#BFCFD4;
 }
 
