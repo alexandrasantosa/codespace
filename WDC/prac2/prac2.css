@@ -34,8 +34,13 @@ h3{
     color:rgba(0,0,0,0.5);
 }
 
-.p1{
+.hl1{
     font-weight:bold;
     font-family:'Raleway';
+}
+
+body{
+    background-color:#DCF5F5;
+    background-image:url("cross.png");
 }
 
