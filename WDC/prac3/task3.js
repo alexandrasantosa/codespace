@@ -13,4 +13,8 @@ function add_post(){
     x.innerHTML= new Date();
     y.innerHTML=textar;
 
+    document.getElementsById("posts").appendChild(x);
+    document.getElementsById("posts").appendChild(y);
+
+
 }
