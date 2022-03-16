@@ -37,3 +37,7 @@ function backmenu(){
     menu.style.display="none";
 }
 
+/* 3-5 */
+function changecolor(e){
+    document.body.style.backgroundColor=e.value;
+}
