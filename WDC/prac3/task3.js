@@ -7,22 +7,21 @@ function mouseOver(){
 
 
 
-function add_post(){
-    var textar=document.getElementsByTagName("textarea");
+function aposts(){
+
+    var tarea=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
     var y=document.createElement("p");
-    var d=new Date();
     x.className="post-time";
     y.className="post-content";
-    x.innerHTML=d;
+    x.innerHTML= new Date();
+    y.innerHTML=tarea;
 
-    y.innerHTML=textar[0].value;
-
-    document.getElementsById("posts").appendChild(x);
-    document.getElementsById("posts").appendChild(y);
+    document.getElementById("posts").appendChild(x);
+    document.getElementById("posts").appendChild(y);
 
 
-}
+  }
 
 /*3-3 */
 function open_menu()
