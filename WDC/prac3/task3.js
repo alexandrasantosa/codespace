@@ -4,7 +4,7 @@ function mouseOver(){
      document.getElementById("mcount").innerHTML=m++;
 }
 
-
+var num=0;
 
 
 function aposts(){
@@ -20,6 +20,7 @@ function aposts(){
     document.getElementById("posts").appendChild(x);
     document.getElementById("posts").appendChild(y);
 
+    
 
   }
 
