@@ -29,3 +29,10 @@ function open_menu()
     menu.style.display="";
 
 }
+
+function backmenu(){}
+    var main=document.getElementById("main");
+    main.style.display="";
+    var menu =document.getElementById("menu");
+    menu.style.display="none";
+}
