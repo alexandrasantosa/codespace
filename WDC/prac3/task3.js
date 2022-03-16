@@ -5,9 +5,10 @@ function mouseOver(){
 }
 
 function add_post(){
-    var textar=document.getElementsByTagName("textarea")[0].value;
+    var textar=document.getElementsByTagName("textarea");
     var x=document.createElement("p");
     var y=document.createElement("p");
+    var d=new Date();
     x.className="post-time";
     y.className="post-content";
     x.innerHTML= new Date();
