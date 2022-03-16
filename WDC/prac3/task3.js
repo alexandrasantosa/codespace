@@ -17,10 +17,12 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
+
+    if document.get
     document.getElementById("posts").appendChild(x);
     document.getElementById("posts").appendChild(y);
 
-    
+
 
 
 
