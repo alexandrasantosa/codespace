@@ -4,6 +4,9 @@ function mouseOver(){
      document.getElementById("mcount").innerHTML=m++;
 }
 
+
+
+
 function add_post(){
     var textar=document.getElementsByTagName("textarea");
     var x=document.createElement("p");
