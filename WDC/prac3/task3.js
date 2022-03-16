@@ -11,8 +11,9 @@ function add_post(){
     var d=new Date();
     x.className="post-time";
     y.className="post-content";
-    x.innerHTML= new Date();
-    y.innerHTML=textar;
+    x.innerHTML=d;
+
+    y.innerHTML=textar[0].value;
 
     document.getElementsById("posts").appendChild(x);
     document.getElementsById("posts").appendChild(y);
@@ -42,3 +43,4 @@ function backmenu(){
 function changecolor(e){
     document.body.style.backgroundColor=e.value;
 }
+
