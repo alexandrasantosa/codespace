@@ -30,7 +30,7 @@ function open_menu()
 
 }
 
-function backmenu(){}
+function backmenu(){
     var main=document.getElementById("main");
     main.style.display="";
     var menu =document.getElementById("menu");
