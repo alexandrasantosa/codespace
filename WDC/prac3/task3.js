@@ -12,13 +12,14 @@ function aposts(){
     var tarea=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
     var y=document.createElement("p");
+    var d=document.createElement("button")
     x.className="post-time";
     y.className="post-content";
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
 
-    if document.get
+
     document.getElementById("posts").appendChild(x);
     document.getElementById("posts").appendChild(y);
 
