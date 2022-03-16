@@ -18,3 +18,14 @@ function add_post(){
 
 
 }
+
+/*3-3 */
+function open_menu()
+
+{
+    var main=document.getElementById("main");
+    main.style.display="none";
+    var menu =document.getElementById("menu");
+    menu.style.display="";
+
+}
