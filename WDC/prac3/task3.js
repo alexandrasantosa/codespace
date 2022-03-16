@@ -19,6 +19,7 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
+    if d=
 
 
     document.getElementById("posts").appendChild(x).appendChild(d);
