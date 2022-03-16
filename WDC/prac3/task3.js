@@ -12,7 +12,8 @@ function aposts(){
     var tarea=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
     var y=document.createElement("p");
-    var d=document.createElement("button")
+    var d=document.createElement("button");
+    d.innerHTML="X";
     x.className="post-time";
     y.className="post-content";
     x.innerHTML= new Date();
@@ -20,7 +21,8 @@ function aposts(){
 
 
 
-    document.getElementById("posts").appendChild(x);
+    document.getElementById("posts").appendChild(x).appendChild(d);
+   /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
 
