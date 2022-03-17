@@ -33,8 +33,8 @@ function aposts(){
     } else {
         y.style.fontWeight = "bold";
         y.style.fontStyle = "italic";
-    }
-    
+    };
+
 
 
 
