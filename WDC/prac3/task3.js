@@ -23,7 +23,7 @@ function aposts(){
 
     /* for 2-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
-    if 
+
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
