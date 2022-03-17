@@ -31,7 +31,13 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-   d.addEventListener("click", () => deleteElementID
+  if(d.addEventListener("click", () => {
+      x.remove();
+      y.remove();
+
+  }
+  ));
+
 }
 
 
