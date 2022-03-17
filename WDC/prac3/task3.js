@@ -23,7 +23,7 @@ function aposts(){
 
 
 
-    /* for 2-8 */
+    /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
 
 
@@ -31,6 +31,7 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
+    /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
       y.remove();
