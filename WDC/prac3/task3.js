@@ -26,7 +26,7 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    
+    if 
 
     /*3-8*/
   if(d.addEventListener("click", () => {
