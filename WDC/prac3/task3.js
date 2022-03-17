@@ -26,14 +26,15 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    if(document.getElementById("bld")=true){
+    if(document.getElementById("bld").checked=true){
         y.style.fontWeight = "bold";
-    } else if(document.getElementById("itl")=true){
+    } else if(document.getElementById.("itl").checked=true){
         y.style.fontStyle = "italic";
     } else {
         y.style.fontWeight = "bold";
         y.style.fontStyle = "italic";
     }
+    
 
 
 
