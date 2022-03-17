@@ -25,11 +25,10 @@ function aposts(){
 
     /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
-
-
-
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
+
+    /*for 3-7*/
 
     /*3-8*/
   if(d.addEventListener("click", () => {
@@ -38,6 +37,8 @@ function aposts(){
 
   }
   ));
+
+
 
 }
 
