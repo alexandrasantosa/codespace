@@ -21,7 +21,7 @@ function aposts(){
 
     /*for 3-4*/
     if(document.getElementById("rdio").checked=true){
-        y.querySelector("p");
+        y.querySelector("#p");
     }
 
 
