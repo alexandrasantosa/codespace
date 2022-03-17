@@ -15,8 +15,8 @@ function aposts(){
     var d=document.createElement("button");
 
     d.innerHTML="X";
+
     x.className="post-time";
-    
     y.className="post-content";
     x.innerHTML= new Date();
     y.innerHTML=tarea;
@@ -25,6 +25,9 @@ function aposts(){
 
     /* for 2-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
+    if (d.remove()){
+        
+    }
 
 
    /* document.getElementById("posts").appendChild(d);*/
