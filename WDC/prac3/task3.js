@@ -19,10 +19,7 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
-    /*for 3-4*/
-    if(document.getElementById("rdio").checked=true){
-        y.querySelector("#p");
-    }
+
 
 
 
