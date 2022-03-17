@@ -26,11 +26,15 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    if(document.getElementById("posts")){
+    if(document.getElementById("bld")=true){
         y.style.fontWeight = "bold";
+    } else if(document.getElementById("itl")=true){
+        y.style.fontStyle = "italic";
     } else {
+        y.style.fontWeight = "bold";
         y.style.fontStyle = "italic";
     }
+
 
 
 
