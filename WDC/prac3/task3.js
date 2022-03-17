@@ -26,7 +26,10 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    if(document.getElementById("demo").style.fontStyle = "italic";
+    if(document.getElementById("posts")){
+        y.style.fontStyle = "italic";
+    }
+
 
     /*3-8*/
   if(d.addEventListener("click", () => {
