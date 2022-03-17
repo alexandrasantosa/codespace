@@ -28,13 +28,9 @@ function aposts(){
 
     if(document.getElementById("bld").checked=true){
         y.style.fontWeight = "bold";
-    } else if(document.getElementById.("itl").checked=true){
+    } else if(document.getElementById("itl").checked=true){
         y.style.fontStyle = "italic";
-    } else {
-        y.style.fontWeight = "bold";
-        y.style.fontStyle = "italic";
-    };
-
+    }
 
 
 
