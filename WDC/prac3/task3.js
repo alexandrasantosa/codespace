@@ -29,6 +29,7 @@ function aposts(){
     document.getElementById("posts").appendChild(y);
 
     /*for 3-7*/
+    if (d)
 
     /*3-8*/
   if(d.addEventListener("click", () => {
