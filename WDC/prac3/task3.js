@@ -19,7 +19,8 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
-    /*for 3-7*/
+    /*for 3-4*/
+    
 
 
 
