@@ -20,9 +20,8 @@ function aposts(){
     y.innerHTML=tarea;
 
     /*for 3-4*/
-    if(document.getElementById("rdio")){
-        document.getElementById("red").checked = true;
-
+    if(document.getElementById("rdio").checked=true){
+        y.
     }
 
 
