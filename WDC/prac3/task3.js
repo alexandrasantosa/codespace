@@ -27,8 +27,11 @@ function aposts(){
     document.getElementById("posts").appendChild(y);
 
     if(document.getElementById("posts")){
+        y.style.fontWeight = "bold";
+    } else {
         y.style.fontStyle = "italic";
     }
+
 
 
     /*3-8*/
