@@ -19,18 +19,20 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
-    if d=
+
 
 
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
+    if (posts.)
 
 
 
 
-  }
+
+
 
 /*3-3 */
 function open_menu()
