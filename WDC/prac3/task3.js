@@ -28,7 +28,7 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    /*if(document.getElementById("bld").checked=true){
+    if(document.getElementById("bld").checked=true){
         y.style.fontWeight = "bold";
     } else if(document.getElementById("itl").checked=true){
         y.style.fontStyle = "italic";
