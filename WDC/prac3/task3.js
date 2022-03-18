@@ -23,17 +23,9 @@ function aposts(){
 
 
     /* for 3-8 */
-   document.getElementById("posts").appendChild(x).appendChild(d);
+    document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
-    var c=document.getElementById("ddown");
-    c.text[0].value;
-    y.add(c);
-
-
-
-
-
 
     /*3-8*/
   if(d.addEventListener("click", () => {
