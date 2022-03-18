@@ -19,12 +19,17 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
-   
+
+
 
     /* for 3-8 */
-    document.getElementById("posts").appendChild(x).appendChild(d);
+   document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
+    var c=document.getElementByTagName(option);
+    y.text[0].value;
+    c.add(y);
+
 
 
 
