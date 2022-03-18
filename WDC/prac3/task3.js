@@ -42,7 +42,6 @@ function aposts(){
   if(d.addEventListener("click", () => {
       x.remove();
       y.remove();
-
   }
   ));
 
