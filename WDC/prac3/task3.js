@@ -20,6 +20,9 @@ function aposts(){
     y.innerHTML=tarea;
 
 
+    if(document.getElementById("bld").checked=true){
+        y.style.fontWeight = "bold";
+    }
 
 
 
@@ -28,11 +31,7 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    if(document.getElementById("bld").checked=true){
-        y.style.fontWeight = "bold";
-    } else {
-        y.style.fontStyle = "italic";
-    }
+
 
 
 
