@@ -26,9 +26,9 @@ function aposts(){
    document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
-    var c=document.getElementByTagName(option);
-    y.text[0].value;
-    c.add(y);
+    var c=document.getElementById("ddown");
+    c.text[0].value;
+    y.add(c);
 
 
 
