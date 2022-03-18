@@ -25,6 +25,10 @@ function aposts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
+    var c = document.getElementById("ddown");
+    
+
+
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
