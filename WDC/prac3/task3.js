@@ -19,12 +19,7 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
-
-    if(document.getElementById("bld").checked=true){
-        y.style.fontWeight = "bold";
-    }
-
-
+   
 
     /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
