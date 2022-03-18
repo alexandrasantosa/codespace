@@ -30,7 +30,7 @@ function aposts(){
 
     if(document.getElementById("bld").checked=true){
         y.style.fontWeight = "bold";
-    } else if(document.getElementById("itl").checked=true){
+    } else {
         y.style.fontStyle = "italic";
     }
 
