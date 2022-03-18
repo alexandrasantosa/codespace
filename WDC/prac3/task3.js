@@ -19,9 +19,6 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
-     /* for 3-4*/
-     if (document.getElementByTagName())
-
 
     /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
