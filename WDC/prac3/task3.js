@@ -26,7 +26,7 @@ function aposts(){
     document.getElementById("posts").appendChild(y);
 
     var c = document.getElementById("ddown");
-    
+
 
 
     /*3-8*/
