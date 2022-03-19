@@ -19,13 +19,14 @@ function aposts(){
     x.innerHTML= new Date();
     y.innerHTML=tarea;
 
+ var blue_option=document.querySelector('form input[name="color1"]:checked').checked;
 
     /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    var c = document.getElementById("ddown");
+
 
 
 
