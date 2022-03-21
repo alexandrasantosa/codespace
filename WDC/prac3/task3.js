@@ -20,12 +20,24 @@ function aposts(){
     y.innerHTML=tarea;
 
 
+
+
     /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
+  var col='red';
+  if(document.getElementsByName("color")[0].checked) {
+    color = document.getElementsByName("color")[0].value;
+}
+var q = parseInt(document.getElementsByName("quantity")[0].value);
 
+for(var i=0; i<q; i++) {
+    display += d + "<br/><span style='color: " + color + "'>" + post[0].value + "</span><br/>";
+}
+t[0].innerHTML=display;
+}  
 
 
 
