@@ -36,13 +36,24 @@ function aposts(){
   }
   ));
 
+  var doc2=document.getElementsByClassName("post-content")[0];
   var num=document.getElementsByName("quantity")[0].value;
   var display="";
   var p="";
   for(var i=0;i<num;i++){
     p=p++"<span style='color:"+color+"'>" +doc2.value; + "</span><br/>";
 
-  }
+   }
+  display = display + dx+ "<br/>" +p;
+  x.innerHTML = display;
+
+   }
+
+  num++;
+
+   
+
+
 
 
 }
