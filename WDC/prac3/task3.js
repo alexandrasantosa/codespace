@@ -48,7 +48,14 @@ function SelectedTextValue(ele) {
     }
 }
 
+function tellus(){
+    {
 
+
+        document.getElementById("ddlContent").disabled = false;
+
+    }
+}
 /*3-3 */
 function open_menu()
 
