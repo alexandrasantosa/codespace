@@ -36,6 +36,15 @@ function aposts(){
   }
   ));
 
+  var num=document.getElementsByName("quantity")[0].value;
+  var display="";
+  var p="";
+  for(var i=0;i<num;i++){
+    p=p++"<span style='color:"+color+"'>" +doc2.value; + "</span><br/>";
+
+  }
+
+
 }
 
 
