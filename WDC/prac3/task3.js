@@ -37,25 +37,9 @@ function aposts(){
   ));
 
 }
-function SelectedTextValue(ele) {
-    if (ele.selectedIndex > 0) {
-        var selectedText = ele.options[ele.selectedIndex].innerHTML;
-        var selectedValue = ele.value;
-        document.getElementById("txtContent").value = selectedText;
-    }
-    else {
-        document.getElementById("txtContent").value = "";
-    }
-}
-
-function tellus(){
-    {
 
 
-        document.getElementById("ddlContent").disabled = false;
 
-    }
-}
 /*3-3 */
 function open_menu()
 
