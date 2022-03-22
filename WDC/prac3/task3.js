@@ -55,11 +55,10 @@ function change_color(e){
 
 function check_post(e){
     if (e==1){
-        document.getElementsByTagname("textarea").style.cssText="font-weight:bold";
+        document.getElementsById("tar").style.cssText="font-weight:bold";
     }
 }
 
 function slide_change(e){
     document.getElementById("n1").value=e;
-    add_post();
 }
