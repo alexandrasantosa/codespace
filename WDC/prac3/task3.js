@@ -61,4 +61,5 @@ function check_post(e){
 
 function slide_change(e){
     document.getElementById("n1").value=e;
+    add_post();
 }
