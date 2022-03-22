@@ -1,12 +1,12 @@
 function new_post(){
     let title=document.getElementById('post-title').value;
     let desc=document.getElementById('post-content').value;
-    let tags=document.getElementById('post-tags').value.split('');
+    let tags=document.getElementById('post-tags').value.split(" ");
 
     add_post(title,desc,tags);
 }
 
-
+function
 
 function add_post(title,desc,tags){
     let post=document.createElement('div');
