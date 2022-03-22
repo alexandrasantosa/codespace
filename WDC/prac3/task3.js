@@ -5,7 +5,6 @@ function mouseOver(){
 }
 
 var num=0;
-
 function aposts(){
     var tarea=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
