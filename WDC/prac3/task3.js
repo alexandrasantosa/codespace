@@ -53,8 +53,12 @@ function change_color(e){
 }
 
 
-function  check_post(e){
+function check_post(e){
     if (e==1){
-        document.getElement
+        document.getElementsbyTagname("textarea").style.css="font-weight:bold";
     }
+}
+
+function slide_change(e){
+    
 }
