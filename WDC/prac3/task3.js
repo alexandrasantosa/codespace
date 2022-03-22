@@ -53,4 +53,8 @@ function change_color(e){
 }
 
 
-function 
+function  check_post(e){
+    if (e==1){
+        document.getElement
+    }
+}
