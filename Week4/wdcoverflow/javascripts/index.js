@@ -4,15 +4,24 @@ function new_post(){
     let tags=document.getElementById('post-tags').value.split(" ");
 
     add_post(title,desc,tags);
+
+    let new={title:title , desc :desc , tags :tags}
+}
+
+function update_posts(){
+    reset_posts();
+    for ( let post of post_list){
+        addpost(post.title,post.desc,)
+    }
 }
 
 function reset_posts(){
-    let container=document.getElementsByTagName('main');
+    let container=document.getElementsByTagName('main')[0];
     while(container.children.length > 1){
         container.children[1].remove();
     }
 }
-
+let post_list=[];
 function add_post(title,desc,tags){
     let post=document.createElement('div');
     post.classList.add("post");
