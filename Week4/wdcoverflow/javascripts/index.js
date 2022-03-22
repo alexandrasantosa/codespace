@@ -9,10 +9,8 @@ function new_post(){
 function reset_posts(){
     let container=document.getElementsByTagName('main');
     while(container.children.length > 1){
-        containe
-
+        container.children[1].remove();
     }
-
 }
 
 function add_post(title,desc,tags){
