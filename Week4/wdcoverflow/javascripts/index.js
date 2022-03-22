@@ -5,7 +5,9 @@ function new_post(){
 
     add_post(title,desc,tags);
 
-    let new={title:title , desc :desc , tags :tags}
+    let new_p{title:title ,desc :desc,tags :tags};
+    post_list
+
 }
 
 function update_posts(){
