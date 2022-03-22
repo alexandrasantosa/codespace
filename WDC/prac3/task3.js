@@ -5,7 +5,7 @@ function mouseOver(){
 }
 
 var num=0;
-function aposts(){
+function add_posts(){
     var tarea=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
     var y=document.createElement("p");
@@ -40,7 +40,7 @@ function open_menu()
 
 }
 
-function backmenu(){
+function back_menu(){
     var main=document.getElementById("main");
     main.style.display="";
     var menu =document.getElementById("menu");
@@ -48,7 +48,9 @@ function backmenu(){
 }
 
 /* 3-5 */
-function changecolor(e){
+function change_color(e){
     document.body.style.backgroundColor=e.value;
 }
 
+
+function 
