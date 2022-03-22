@@ -28,7 +28,8 @@
                 <button type="button" onclick="add_posts()">Post</button>
             </div>
             <div class="controls left">
-                <input type="range" name="visible" min="1" max="10" value="10"/><br />
+                <input type="range" name="visible" min="1" max="10" value="10" onclick="slide_change(this.value)" oninput
+                ="slide_change(this.value)" /><br />
                 <input id="bld" type="checkbox" name="style" value="bold" onclick="check_post(1)"/> Bold<br />
                 <input id="itl" type="checkbox" name="style" value="italic" onclick="check_post(2)"/> Italic<br />
                 <select>
