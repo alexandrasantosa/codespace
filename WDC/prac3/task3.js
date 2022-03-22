@@ -55,7 +55,7 @@ function change_color(e){
 
 function check_post(e){
     if (e==1){
-        document.getElementsById("tar").style.cssText="font-weight:bold";
+        document.getQuerySelector("#bld");
     }
 }
 
