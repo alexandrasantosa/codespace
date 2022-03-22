@@ -28,6 +28,8 @@ function add_posts(){
        y.style.color='blue';
     } else if (red_opt);
        y.style.color='red';
+
+       
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
