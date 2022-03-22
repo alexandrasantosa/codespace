@@ -6,7 +6,14 @@ function new_post(){
     add_post(title,desc,tags);
 }
 
-function
+function reset_posts(){
+    let container=document.getElementsByTagName('main');
+    while(container.children.length > 1){
+        containe
+
+    }
+
+}
 
 function add_post(title,desc,tags){
     let post=document.createElement('div');
