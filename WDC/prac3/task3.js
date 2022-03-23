@@ -6,7 +6,7 @@ function mouseOver(){
 
 var num=0;
 function add_posts(){
-    var tarea=document.getElementsByTagName("textarea")[0].value;
+    var tar=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
     var y=document.createElement("p");
     var d=document.createElement("button");
@@ -14,7 +14,7 @@ function add_posts(){
     x.className="post-time";
     y.className="post-content";
     x.innerHTML= new Date();
-    y.innerHTML=tarea;
+    y.innerHTML=tar;
 
 
 
