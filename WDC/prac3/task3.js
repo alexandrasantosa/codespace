@@ -2,9 +2,9 @@
 
 
 /*3.1*/
-var m=1;
+var inc=1;
 function mouse_over(){
-     document.getElementById("mcount").innerHTML=m++;
+     document.getElementById("mcount").innerHTML=inc++;
 }
 
 var num=0;
