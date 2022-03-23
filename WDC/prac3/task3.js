@@ -28,7 +28,10 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    
+    var blue_opt=document.querySelector('form input["name=color1"]:checked').checked;
+    if (blue_opt){
+        y.style.color="blue";
+    }
 
 
     /*3-8*/
