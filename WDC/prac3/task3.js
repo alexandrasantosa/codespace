@@ -28,7 +28,7 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    document.getQuerySelector()
+
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
@@ -46,18 +46,13 @@ function add_posts(){
 function open_menu()
 
 {
-    var mn=document.getElementById("main");
-    mn.style.display="none";
-    var mnu =document.getElementById("menu");
-    mnu.style.display="";
-
+   document.getElementById("main").style.display="none";
+   document.getElementById("menu").style.display="";
 }
 
 function back_menu(){
-    var mn=document.getElementById("main");
-    mn.style.display="";
-    var mnu =document.getElementById("menu");
-    mnu.style.display="none";
+   document.getElementById("main").style.display="";
+   document.getElementById("menu").style.display="none";;
 }
 
 /* 3-5 */
