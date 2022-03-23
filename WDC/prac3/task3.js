@@ -1,3 +1,6 @@
+/*Alexandra Belinda Santosa */
+
+
 /*3.1*/
 var m=1;
 function mouse_over(){
@@ -19,11 +22,19 @@ function add_posts(){
     y.innerHTML=tar;
 
 
+    var blue_opt=document.querySelector('form input[name="color1]:checked').checked;
+    if ( blue_opt ){
+        y.style-color="blue";
+    }
 
     /* for 3-8 */
     var c=document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
-    var f=document.getElementById("posts").appendChild(y);
+    document.getElementById("posts").appendChild(y);
+
+
+
+
 
     /*3-8*/
   if(d.addEventListener("click", () => {
@@ -32,7 +43,7 @@ function add_posts(){
   }
   ));
 
-  
+
 
 }
 
