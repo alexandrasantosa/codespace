@@ -1,6 +1,6 @@
 /*3.1*/
 var m=1;
-function mouseOver(){
+function mouse_over(){
      document.getElementById("mcount").innerHTML=m++;
 }
 
@@ -11,6 +11,8 @@ function add_posts(){
     var y=document.createElement("p");
     var d=document.createElement("button");
     d.innerHTML="X";
+
+    /*classname*/
     x.className="post-time";
     y.className="post-content";
     x.innerHTML= new Date();
@@ -38,18 +40,18 @@ function add_posts(){
 function open_menu()
 
 {
-    var main=document.getElementById("main");
-    main.style.display="none";
-    var menu =document.getElementById("menu");
-    menu.style.display="";
+    var mn=document.getElementById("main");
+    mn.style.display="none";
+    var mnu =document.getElementById("menu");
+    mnu.style.display="";
 
 }
 
 function back_menu(){
-    var main=document.getElementById("main");
-    main.style.display="";
-    var menu =document.getElementById("menu");
-    menu.style.display="none";
+    var mn=document.getElementById("main");
+    mn.style.display="";
+    var mnu =document.getElementById("menu");
+    mnu.style.display="none";
 }
 
 /* 3-5 */
