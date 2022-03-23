@@ -17,13 +17,11 @@ function add_posts(){
     y.innerHTML=tarea;
 
 
-    
-
 
     /* for 3-8 */
-    document.getElementById("posts").appendChild(x).appendChild(d);
+    var c=document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
-     document.getElementById("posts").appendChild(y);
+    var f=document.getElementById("posts").appendChild(y);
 
 
     /*3-8*/
