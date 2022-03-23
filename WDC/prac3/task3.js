@@ -29,7 +29,7 @@ function add_posts(){
     document.getElementById("posts").appendChild(y);
 
     var selectelem=document.querySelector('#sl1');
-    output=
+    output=se
 
 
 
