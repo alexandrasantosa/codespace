@@ -30,7 +30,7 @@ function add_posts(){
 
     const blue_opt=document.getElementsByName("color").checked;
     if (blue_opt){
-        y.style.color='blue';
+        y.style.color="blue";
     }
 
 
