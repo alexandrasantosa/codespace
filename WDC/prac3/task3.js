@@ -17,19 +17,15 @@ function add_posts(){
     y.innerHTML=tarea;
 
 
+    
+
+
     /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
-    document.getElementById("posts").appendChild(y);
-    /*3-4*/
-    var blue_opt=document.querySelector('form input[name="color1"]:checked').checked;
-    var red_opt=document.querySelector('form input [name="color2"]:checked').checked;
-    if (blue_opt){
-       y.style.color='blue';
-    } else if (red_opt);
-       y.style.color='red';
+     document.getElementById("posts").appendChild(y);
 
-       
+
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
