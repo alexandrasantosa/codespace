@@ -21,16 +21,16 @@ function add_posts(){
     x.innerHTML= new Date();
     y.innerHTML=tar;
 
-      if (document.getElementsByName("color").checked){
-          y.style.color='blue';
-      }
+
 
     /* for 3-8 */
     var c=document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-
+    if (document.getElementsByName("color").checked){
+        y.style.color="blue";
+    }
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
