@@ -52,7 +52,7 @@ function open_menu()
 
 function back_menu(){
    document.getElementById("main").style.display="";
-   document.getElementById("menu").style.display="none";;
+   document.getElementById("menu").style.display="none";
 }
 
 /* 3-5 */
