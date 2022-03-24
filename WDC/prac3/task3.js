@@ -28,7 +28,7 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    var blue_opt=document.geQ("color").checked;
+    var blue_opt=document.getQuerySelector("color").checked;
     if (blue_opt){
         y.style.color="blue";
     }
