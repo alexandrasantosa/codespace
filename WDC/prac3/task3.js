@@ -25,7 +25,9 @@ function add_posts(){
     var col_check=document.querySelectorAll('input[type="radio"]')[0].value;
     if(col_check="red"){
         y.style.color="red";
-    } else
+    } else if (col_check="blue"){
+        y.style.color="blue";
+    }
 
 
 
