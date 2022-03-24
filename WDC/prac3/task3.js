@@ -21,8 +21,9 @@ function add_posts(){
     x.innerHTML= new Date();
     y.innerHTML=tar;
 
-    var col_check=document.getQuerySelectorAll('input[name="color"]').checked;
-    /* for 3-8 */ ('input[type=radio]')
+    var col_check=document.getQuerySelectorAll('input[name="color"]');
+    console.log(col_check);
+    /* for 3-8 */ /*('input[type=radio]')*/
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
