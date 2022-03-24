@@ -23,12 +23,15 @@ function add_posts(){
 
 
     var col_check=document.querySelectorAll('input[type="radio"]')[0].value;
-    console.log(col_check[0]);
+
+    console.log(col_check);
+
+
 
     /* for 3-8 */ /*('input[type=radio]')*/
-    document.getElementById("posts").appendChild(x).appendChild(d);
+   var p1= document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
-    document.getElementById("posts").appendChild(y);
+   var p2=document.getElementById("posts").appendChild(y);
 
 
     /*3-8*/
