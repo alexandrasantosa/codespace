@@ -28,7 +28,7 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-
+ 
 
     /*3-8*/
   if(d.addEventListener("click", () => {
