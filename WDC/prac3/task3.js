@@ -23,8 +23,10 @@ function add_posts(){
 
 
     var col_check=document.querySelectorAll('input[type="radio"]')[0].value;
+    if(col_check.value="red"){
+        y.style.color="red";
+    }
 
-    console.log(col_check);
 
 
 
