@@ -11,21 +11,22 @@ function mouse_over(){
 function add_posts(){
     var tar=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
+    x.innerHTML= new Date();
     var y=document.createElement("p");
+    y.innerHTML=tar;
     var d=document.createElement("button");
     d.innerHTML="X";
 
     /*classname*/
     x.className="post-time";
     y.className="post-content";
-    x.innerHTML= new Date();
-    y.innerHTML=tar;
+
 
     var col_check=document.querySelectorAll('input[type="radio"]')[0].value;
     console.log(col_check);
-    if(col_check[1]){
-        y.style.content="blue";
-    }
+    /*if(col_check[1]){
+        y.style.color="blue";
+    }*?
     /* for 3-8 */ /*('input[type=radio]')*/
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
