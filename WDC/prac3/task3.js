@@ -21,7 +21,7 @@ function add_posts(){
     x.innerHTML= new Date();
     y.innerHTML=tar;
 
-    var col_check=document.querySelectorAll('input[type="radio"]');
+    var col_check=document.querySelectorAll('input[type="radio"]')[0].value;
     console.log(col_check);
     /* for 3-8 */ /*('input[type=radio]')*/
     document.getElementById("posts").appendChild(x).appendChild(d);
