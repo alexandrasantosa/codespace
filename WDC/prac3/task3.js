@@ -28,12 +28,13 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
-    var blue_opt=document.getQuerySelector("color").checked;
+    var blue_opt=document.getQuerySelector("form input[name='color1']:checked").checked;
     if (blue_opt){
-        y.style.color="blue";
+        
     }
 
-if(document.getElementsByName("quantity""))
+
+
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
