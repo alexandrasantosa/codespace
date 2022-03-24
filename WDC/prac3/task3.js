@@ -28,8 +28,10 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
 
- 
-
+  var col_check=document.getQuerySelectorAll('input[name="color"]').checked;
+  if (col_check){
+      y.style.color="blue";
+  }
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
