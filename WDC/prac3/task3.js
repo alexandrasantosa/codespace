@@ -34,6 +34,7 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
    var p2=document.getElementById("posts").appendChild(y);
 
+   if(col_check)
 
     /*3-8*/
   if(d.addEventListener("click", () => {
