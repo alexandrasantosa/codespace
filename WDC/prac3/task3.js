@@ -22,9 +22,9 @@ function add_posts(){
     y.className="post-content";
 
 
-    var col_check=document.querySelectorAll('input[type="radio"]:checked');
+    var col_check=document.querySelectorAll('input[type="radio"]')[0].value;
     console.log(col_check);
-    if(col_check="blue"){
+    if(col_check[value="blue"]){
         y.style.content="blue";
     }
 
