@@ -33,7 +33,7 @@ function add_posts(){
         y.style.color="blue";
     }
 
-if(document.getElementsByName)
+if(document.getElementsByName("quantity""))
     /*3-8*/
   if(d.addEventListener("click", () => {
       x.remove();
