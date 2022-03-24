@@ -22,10 +22,6 @@ function add_posts(){
     y.innerHTML=tar;
 
     var col_check=document.getQuerySelectorAll('input[name="color"]').checked;
-    col_check
-
-
-
     /* for 3-8 */
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
