@@ -7,7 +7,7 @@ function mouse_over(){
      document.getElementById("mcount").innerHTML=inc++;
 }
 
-var num=0;
+
 function add_posts(){
     var tar=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
@@ -27,11 +27,6 @@ function add_posts(){
     document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
     document.getElementById("posts").appendChild(y);
-
-    var blue_opt=document.getQuerySelector("form input[name='color1']:checked").checked;
-    if (blue_opt){
-        
-    }
 
 
 
