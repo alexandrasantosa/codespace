@@ -33,11 +33,16 @@ function add_posts(){
     }
 
    var num=document.querySelectorAll('input[type="number"]')[0].value;
+   console.log(num);
 
     /* for 3-8 */ /*('input[type=radio]')*/
    var p1= document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
    var p2=document.getElementById("posts").appendChild(y);
+   if(num++){
+       p1++;
+       p2++;
+   }
 
 
 
