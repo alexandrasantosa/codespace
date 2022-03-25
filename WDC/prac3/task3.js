@@ -36,7 +36,8 @@ function add_posts(){
 
 
 
-   var num=document.querySelectorAll('input[type="number"]')
+   var num=document.querySelectorAll('input[type="number"]').value;
+   for 
 
     /* for 3-8 */ /*('input[type=radio]')*/
    var p1= document.getElementById("posts").appendChild(x).appendChild(d);
