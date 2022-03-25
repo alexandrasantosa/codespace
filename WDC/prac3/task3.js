@@ -30,21 +30,17 @@ function add_posts(){
         y.style.color="blue";
     } else if(col_check==false){
         y.style.color="red";
-    } else {
-
     }
 
-
-
-   var num=document.querySelectorAll('input[type="number"]').value;
-   for 
+   var num=document.querySelectorAll('input[type="number"]')[0].value;
+   for(var n=0; n<num ; num++){
 
     /* for 3-8 */ /*('input[type=radio]')*/
    var p1= document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
    var p2=document.getElementById("posts").appendChild(y);
 
-
+   }
 
     /*3-8*/
   if(d.addEventListener("click", () => {
