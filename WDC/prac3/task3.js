@@ -43,6 +43,12 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
    var p2=document.getElementById("posts").appendChild(y);
 
+   if(d.addEventListener("click", () => {
+    x.remove();
+    y.remove();
+    }
+    ));
+
    }
 
    var col_check=document.querySelectorAll('input[type="radio"]')[0].checked;
@@ -57,11 +63,7 @@ function add_posts(){
 
 
     /*3-8*/
-  if(d.addEventListener("click", () => {
-      x.remove();
-      y.remove();
-  }
-  ));
+
 
 
 
