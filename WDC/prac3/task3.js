@@ -24,13 +24,12 @@ function add_posts(){
 
     var col_check=document.querySelectorAll('input[type="radio"]')[0].checked;
     console.log(col_check);
-    if(col_check==false){
-        y.style.color="red";
-    }
     var col_check_1=document.querySelectorAll('input[type="radio"]')[0].checked;
     console.log(col_check_1);
     if(col_check_1==true){
         y.style.color="blue";
+    } else if(col_check==false){
+        y.style.color="red";
     }
 
 
