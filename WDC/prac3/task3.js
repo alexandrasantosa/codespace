@@ -30,9 +30,11 @@ function add_posts(){
         y.style.color="blue";
     } else if(col_check==false){
         y.style.color="red";
+    } else {
+
     }
 
-    
+
 
 
     /* for 3-8 */ /*('input[type=radio]')*/
