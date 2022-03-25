@@ -27,10 +27,11 @@ function add_posts(){
     if(col_check==false){
         y.style.color="red";
     }
-
-
-
-
+    var col_check_1=document.querySelectorAll('input[type="radio"]')[0].checked;
+    console.log(col_check_1);
+    if(col_check_1==true){
+        y.style.color="blue";
+    }
 
 
     /* for 3-8 */ /*('input[type=radio]')*/
@@ -38,7 +39,7 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
    var p2=document.getElementById("posts").appendChild(y);
 
-   if(col_check)
+
 
     /*3-8*/
   if(d.addEventListener("click", () => {
