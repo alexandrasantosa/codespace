@@ -33,9 +33,7 @@ function add_posts(){
     }
 
    var num=document.querySelectorAll('input[type="number"]')[0].value;
-   for(var n=0; n<num ; n+){
-   }
-   
+
     /* for 3-8 */ /*('input[type=radio]')*/
    var p1= document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
