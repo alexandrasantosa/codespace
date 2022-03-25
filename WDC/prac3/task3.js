@@ -24,7 +24,7 @@ function add_posts(){
 
     var col_check=document.querySelectorAll('input[type="radio"]')[0].value;
     console.log(col_check);
-    if(col_check[])
+
 
 
 
