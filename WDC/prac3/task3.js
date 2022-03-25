@@ -9,7 +9,7 @@ function mouse_over(){
 
 
 function add_posts(){
-    var tar=document.getElementsByTagName("textarea")[0].value;
+    /*var tar=document.getElementsByTagName("textarea")[0].value;
     var x=document.createElement("p");
     x.innerHTML= new Date();
     var y=document.createElement("p");
@@ -18,29 +18,41 @@ function add_posts(){
     d.innerHTML="X";
 
     /*classname*/
-    x.className="post-time";
-    y.className="post-content";
+    /*x.className="post-time";
+    y.className="post-content"; */
 
 
-    var col_check=document.querySelectorAll('input[type="radio"]')[0].checked;
-    console.log(col_check);
-    var col_check_1=document.querySelectorAll('input[type="radio"]')[1].checked;
-    console.log(col_check_1);
-    if(col_check_1==true){
-        y.style.color="blue";
-    } else if(col_check==false){
-        y.style.color="red";
-    }
+
 
    var num=document.querySelectorAll('input[type="number"]')[0].value;
    console.log(num);
    for(var n=0;n<num;n++){
+    var tar=document.getElementsByTagName("textarea")[0].value;
+    var x=document.createElement("p");
+    x.innerHTML= new Date();
+    var y=document.createElement("p");
+    y.innerHTML=tar;
+    var d=document.createElement("button");
+    d.innerHTML="X";
+
+    x.className="post-time";
+    y.className="post-content";
 
     /* for 3-8 */ /*('input[type=radio]')*/
    var p1= document.getElementById("posts").appendChild(x).appendChild(d);
    /* document.getElementById("posts").appendChild(d);*/
    var p2=document.getElementById("posts").appendChild(y);
 
+   }
+
+   var col_check=document.querySelectorAll('input[type="radio"]')[0].checked;
+   console.log(col_check);
+   var col_check_1=document.querySelectorAll('input[type="radio"]')[1].checked;
+   console.log(col_check_1);
+   if(col_check_1==false){
+       y.style.color="blue";
+   } else if(col_check==false){
+       y.style.color="red";
    }
 
 
