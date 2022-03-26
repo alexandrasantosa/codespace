@@ -55,9 +55,11 @@ function add_posts(){
    console.log(col_check);
    var col_check_1=document.querySelectorAll('input[type="radio"]')[1].checked;
    console.log(col_check_1);
-   if(col_check_1==false){
+   if(col_check==true){
        y.style.color="blue";
-   } else if(col_check==false){
+   }
+
+   if(col_check_1==true){
        y.style.color="red";
    }
 
