@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> </head>
+
+<body>
+    <h1 id= "heading1"></h1>
+    <script>
+    var xhttp= new XMLHttpRequest();
+    var head1=document.getElementById("heading1");
+
+    function color_request(){
+    xhttp.onreadystatechange=function(){
+        if(this.readyState ==4 && this.status == 200){
+            head1.innerHTML=this.responseText;
+            head2.style.color=this.responseText;
+
+        }
+    }
+    };
+
+xhttp.open("GET","/color.txt",true);
+xhttp.send();
+
+}
+
+</script>
+</body>
+</html>
