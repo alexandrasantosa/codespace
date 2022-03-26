@@ -25,5 +25,5 @@ router.get('/color.txt',function(req,res,next){
     inc=0;
   }
   res.send(color);
-})
+});
 module.exports = router;
