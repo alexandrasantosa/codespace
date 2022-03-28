@@ -13,7 +13,7 @@ router.get('/last.txt',function(req,res,next){
 });
 
 var inc=0;
-router.get('/color.txt',function(req,res,next){
+router.get('/color.html',function(req,res,next){
   var color="";
   inc++;
   if(inc ==1 ){
@@ -21,6 +21,8 @@ router.get('/color.txt',function(req,res,next){
   } else if (inc == 2 ){
     color="yellow";
   }else if (inc == 3){
+    color="green";
+  }else if (inc == 4){
     color="blue";
     inc=0;
   }
