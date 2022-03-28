@@ -17,5 +17,6 @@ router.get('/color.html',function(req,res,next){
   res.send('<!DOCTYPE html>\
   <html>\
   <head>\
-  <)
+  <title></title\
+  )
 module.exports = router;
