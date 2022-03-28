@@ -17,6 +17,11 @@ router.get('/color.html',function(req,res,next){
   res.send('<!DOCTYPE html>\
   <html>\
   <head>\
-  <title></title\
-  )
+  <title></title>\
+  </head>\
+  <body>\
+  <h1 id="heading1"></h1>\
+  <script>\
+  var inc='+inc+';
+  var h1)
 module.exports = router;
