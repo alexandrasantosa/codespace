@@ -41,7 +41,8 @@ router.get('/color.html',function(req,res,next){
   </body>\
   </html>\
   ');
-inc++;
+
+  inc++;
 if(inc == 4){
 inc= 0;
 }
