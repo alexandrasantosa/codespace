@@ -7,13 +7,13 @@ router.get('/', function(req, res, next) {
 });
 
 var date;
-router.get('/last.txt',function(req,res,next){
+router.get('/last.txt',function(req,res){
   res.send(date);
   date=new Date();
 });
 
 var inc = 0;
-router.get('/color.html', function(req,res,next){
+router.get('/color.html', function(req,res){
 res.send('<!DOCTYPE html>\
      <html>\
       <head>\
