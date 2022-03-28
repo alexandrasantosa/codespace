@@ -43,11 +43,6 @@ function add_posts(){
    /* document.getElementById("posts").appendChild(d);*/
    var p2=document.getElementById("posts").appendChild(y);
 
-   if(d.addEventListener("click", () => {
-    x.remove();
-    y.remove();
-    }
-    ));
 
    }
 
@@ -64,6 +59,11 @@ function add_posts(){
    }
 
 
+   if(d.addEventListener("click", () => {
+    x.remove();
+    p2.remove();
+    }
+    ));
     /*3-8*/
 
 
