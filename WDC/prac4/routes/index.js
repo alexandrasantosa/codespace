@@ -39,8 +39,9 @@ router.get('/color.html',function(req,res,next){
     }\
     </script>\
     </body>\
-    </html>\');
-  });
+    </html>\
+
+});
 
 var inc=0;
 router.get('/color.txt',function(req,res,next){
