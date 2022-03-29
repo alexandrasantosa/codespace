@@ -16,7 +16,7 @@ router.get('/last.txt',function(req,res){
 var a=1;
 var time_stamp="";
 router.get('/log.html', function(req, res){
-  if(a++){
+  if(a++==1){
     time_stamp=new Date();
   }else {
    time_stamp=time_stamp+"<br>"+(new Date());
