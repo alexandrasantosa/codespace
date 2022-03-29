@@ -14,18 +14,18 @@ router.get('/last.txt',function(req,res){
 
 
 var a=1;
-var timestamp="" ;
-router.get('/log.html', function(req, res,next){
-  if(a++==1){
-    timestamp=new Date().toString();
+var time_stamp="";
+router.get('/log.html', function(req, res){
+  if(a++){
+    time_stamp=new Date();
   }else {
-   timestamp=timestamp+"<br>"+(new Date().toString());
-   res.send(timestamp);
-   }
+   time_stamp=time_stamp+"<br>"+(new Date());
+   res.send(time_stamp);
+  }
 });
 
 var inc=0;
-router.get('/color.txt',function(req,res,next){
+router.get('/color.txt',function(req,res){
   var color="";
   inc++;
   if(inc ==1 ){
