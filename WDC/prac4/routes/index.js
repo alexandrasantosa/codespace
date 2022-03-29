@@ -12,6 +12,7 @@ router.get('/last.txt',function(req,res,next){
   date=new Date();
 });
 
+
 var inc=0;
 router.get('/color.txt',function(req,res,next){
   var color="";
