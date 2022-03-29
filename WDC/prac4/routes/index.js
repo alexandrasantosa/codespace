@@ -13,17 +13,12 @@ router.get('/last.txt',function(req,res){
 });
 
 
-
-
-
 var a=1;
-
 var timestamp="" ;
 router.get('/log.html', function(req, res,next){
   if(a++==1){
     timestamp=new Date().toString()
-  }
-   else {
+  }else {
    timestamp=timestamp+"<br>"+(new Date().toString());
    res.send(timestamp);
    }
