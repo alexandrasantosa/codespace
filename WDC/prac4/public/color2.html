@@ -8,25 +8,27 @@
     <h1 id= "heading1"></h1>
     <br> <button onclick="color_request()" id="col1"> click </button>
     <script>
-    var xhttp= new XMLHttpRequest();
+
 
     function color_request(){
+    var xhttp= new XMLHttpRequest();
     xhttp.onreadystatechange=function(){
         if(this.readyState ==4 && this.status == 200){
-           var c1= document.getELementById("col1").innerHTML;
-             c1=this.responseText;
+
+             document.getElementById("col1").innerHTML=this.responseText;
+             var c1= document.getELementById("col1").innerHTML;
 
             if(c1=="red"){
-                c1.style.color="red";
+                document.getElementById("col1").style.color="red";
             }
             if(c1=="yellow"){
-                c1.style.color="yellow";
+                document.getElementById("col1").style.color="yellow";
             }
             if(c1=="green"){
-                c1.style.color="green";
+                document.getElementById("col1").style.color="green";
             }
             if(c1=="blue"){
-                c1.style.color="blue";
+                document.getElementById("col1").style.color="blue";
             }
 
         }
