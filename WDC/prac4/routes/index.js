@@ -12,10 +12,4 @@ router.get('/last.txt',function(req,res,next){
   date=new Date();
 });
 
-
-
-
-
-
-
 module.exports = router;
