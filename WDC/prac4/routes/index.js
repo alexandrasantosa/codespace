@@ -26,14 +26,29 @@ router.get('/color.html',function(req,res,next){
     var incr='+incr+';var hea=document.getElementById("heading1");\
     if(incr==0){\
       incr=++;\
-      incr.innerText="red";\
-      incr.style.color="red";\
-
-
-    </body>
-  )
+      hea.innerText="red";\
+      hea.style.color="red";\
+    }else if(incr==1){\
+      hea.innerText="yellow";\
+      hea.style.color="yellow";\
+    }else if(incr==2){\
+      hea.innerText="green";\
+      hea.style.color="green";\
+    }else if(incr==3){\
+        hea.innerText="blue";\
+        hea.style.color="blue";\
+    }\
+    </script>\
+    </body>\
+    </html>\
+  ');
+  incr++;
+  if(incr==4){
+    incr=0;
+  }
 }
-)
+);
+
 var inc=0;
 router.get('/color.txt',function(req,res,next){
   var color="";
