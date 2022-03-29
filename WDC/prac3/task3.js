@@ -4,7 +4,8 @@
 /*3.1*/
 var inc=1;
 function mouse_over(){
-     document.getElementById("mcount").innerHTML=inc++;
+     var mc=document.getElementById("mcount");
+     mc.innerHTML=inc++;
 }
 
 
@@ -58,25 +59,19 @@ function add_posts(){
        y.style.color="red";
    }
 
-
+  /*3-8*/
    if(d.addEventListener("click", () => {
     x.remove();
     p2.remove();
     }
     ));
     /*3-8*/
-
-
-
-
 }
 
 
 
 /*3-3 */
-function open_menu()
-
-{
+function open_menu(){
    document.getElementById("main").style.display="none";
    document.getElementById("menu").style.display="";
 }
