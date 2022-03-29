@@ -34,25 +34,6 @@ router.get('/log.html', function(req, res, next) {
 });
 
 
-var arr = "";
-router.get('/color.txt', function(req, res, next) {
-  arr= arr.concat(`<li>${new Date()}</li>`);
-    res.send(`<!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <title>Express</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <script src="html.js"></script>
-  </head>
-  <body>
-  <ul style="list-style-type:dot;">
-    ${arr}
-  </ul>
-  </body>
-</html>`);
-});
-
 var incr = 0;
 router.get('/color.html', function(req, res, next) {
   if(incr%4 == 0){
