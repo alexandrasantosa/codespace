@@ -13,8 +13,21 @@
     function color_request(){
     xhttp.onreadystatechange=function(){
         if(this.readyState ==4 && this.status == 200){
-            head1.innerHTML=this.responseText;
-            head1.style.color=this.responseText;
+           var c1= document.getELementById("col1").innerHTML;
+             c1=this.responseText;
+
+            if(c1=="red"){
+                c1.style.color="red";
+            }
+            if(c1=="yellow"){
+                c1.style.color="yellow";
+            }
+            if(c1=="green"){
+                c1.style.color="green";
+            }
+            if(c1=="blue"){
+                c1.style.color="blue";
+            }
 
         }
     }
