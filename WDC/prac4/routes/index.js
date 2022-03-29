@@ -14,6 +14,7 @@ router.get('/last.txt',function(req,res){
 
 
 
+
 var arr = "";
 router.get('/log.html', function(req, res, next) {
   arr= arr.concat(`<li>${new Date()}</li>`);
