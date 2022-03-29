@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 var date;
-router.get('/last.txt',function(req,res,next){
+router.get('/last.txt',function(req,res){
   res.send(date);
   date=new Date();
 });
