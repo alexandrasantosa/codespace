@@ -11,7 +11,29 @@ router.get('/last.txt',function(req,res){
   res.send(date);
   date=new Date();
 });
+var incr=0;
+router.get('/color.html',function(req,res,next){
+  res.send(
+    '<DOCTYPE html>\
+    <html>\
+    <head>\
+    <title></title>\
 
+    </head>\
+    <body>\
+    <h1 id="heading1">Test</h1>\
+    <script>\
+    var incr='+incr+';var hea=document.getElementById("heading1");\
+    if(incr==0){\
+      incr=++;\
+      incr.innerText="red";\
+      incr.style.color="red";\
+
+
+    </body>
+  )
+}
+)
 var inc=0;
 router.get('/color.txt',function(req,res,next){
   var color="";
