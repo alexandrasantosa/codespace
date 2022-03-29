@@ -98,6 +98,30 @@ router.get('/color.html', function(req, res, next) {
 });
 
 
+var inc=0;
+router.get('/color.txt',function(req,res,next){
+  if (inc%4==0){
+    res.send('red');
+  }
+
+  if (inc%4==1){
+    res.send('yellow');
+  }
+
+  if (inc%4 == 2){
+    res.send('green');
+  }
+  if (inc%4 == 3){
+    res.send('blue');
+  }
+    inc ++;
+
+});
+
+
+
+
+
 
 
 
