@@ -17,7 +17,7 @@ var a=1;
 var timestamp="" ;
 router.get('/log.html', function(req, res,next){
   if(a++==1){
-    timestamp=new Date().toString()
+    timestamp=new Date().toString();
   }else {
    timestamp=timestamp+"<br>"+(new Date().toString());
    res.send(timestamp);
