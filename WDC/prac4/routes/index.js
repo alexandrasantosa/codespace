@@ -53,22 +53,69 @@ router.get('/color.txt', function(req, res, next) {
 </html>`);
 });
 
-var inc=0;
-router.get('/color.txt',function(req,res){
-  var color="";
-  inc++;
-  if(inc ==1 ){
-    color="red";
-  } else if (inc == 2 ){
-    color="yellow";
-  }else if (inc == 3){
-    color="green";
-  }else if (inc == 4){
-    color="blue";
-    inc=0;
+var incr = 0;
+router.get('/color.html', function(req, res, next) {
+  if(incr%4 == 0){
+    res.send(`<!DOCTYPE html> <html lang="en">
+<head>
+<title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <h1 style="color:red">red</h1>
+</body>
+
+</html>`);
   }
-  res.send(color);
+  if (incr%4 == 1){
+    res.send(`<!DOCTYPE html> <html lang="en">
+
+<head>
+  <title>Express</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1 style="color:yellow">yellow</h1>
+</body>
+
+</html>`);
+  }
+  if (incr%4 == 2){
+    res.send(`<!DOCTYPE html> <html lang="en">
+
+<head>
+  <title>Express</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1 style="color:green">green</h1>
+</body>
+
+</html>`);
+  }
+  if (incr%4 == 3){
+    res.send(`<!DOCTYPE html> <html lang="en">
+
+<head>
+  <title>Express</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1 style="color:blue">blue</h1>
+</body>
+
+</html>`);
+  }
+  incr ++;
 });
+
+
 
 
 
