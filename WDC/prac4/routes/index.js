@@ -13,8 +13,7 @@ router.get('/last.txt',function(req,res){
 });
 var incr=0;
 router.get('/color.html',function(req,res,next){
-  res.send(
-    '<DOCTYPE html>\
+  res.send('<DOCTYPE html>\
     <html>\
     <head>\
     <title></title>\
