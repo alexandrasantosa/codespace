@@ -14,28 +14,23 @@ router.get('/last.txt',function(req,res){
 
 
 
-var array = "";
+var arr = "";
 router.get('/log.html', function(req, res, next) {
-  array = array.concat(`<li>${new Date()}</li>`);
+  arr= arr.concat(`<li>${new Date()}</li>`);
     res.send(`<!DOCTYPE html>
   <html lang="en">
-
   <head>
   <title>Express</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="html.js"></script>
   </head>
-
   <body>
   <ul style="list-style-type:dot;">
-    ${array}
+    ${arr}
   </ul>
   </body>
-
 </html>`);
-
-
 });
 
 var inc=0;
