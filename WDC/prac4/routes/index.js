@@ -13,15 +13,29 @@ router.get('/last.txt',function(req,res){
 });
 
 
-var a=1;
-var time_stamp="";
-router.get('/log.html', function(req, res){
-  if(a++==1){
-    time_stamp=new Date();
-  }else {
-   time_stamp=time_stamp+"<br>"+(new Date());
-   res.send(time_stamp);
-  }
+
+var array = "";
+router.get('/log.html', function(req, res, next) {
+  array = array.concat(`<li>${new Date()}</li>`);
+    res.send(`<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+  <title>Express</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="html.js"></script>
+  </head>
+
+  <body>
+  <ul style="list-style-type:dot;">
+    ${array}
+  </ul>
+  </body>
+
+</html>`);
+
+
 });
 
 var inc=0;
