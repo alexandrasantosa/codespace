@@ -13,33 +13,28 @@ router.get('/last.txt',function(req,res){
 });
 
 
-var a=1;
-var time_stamp="";
-router.get('/log.html', function(req, res){
-  if(a++==1){
-    time_stamp=new Date();
-  }else {
-   time_stamp=time_stamp+"<br>"+(new Date());
-   res.send(time_stamp);
-  }
+
+
+var arr = "";
+router.get('/log.html', function(req, res, next) {
+  arr= arr.concat(`<li>${new Date()}</li>`);
+    res.send(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <title>Express</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="html.js"></script>
+  </head>
+  <body>
+  <ul style="list-style-type:dot;">
+    ${arr}
+  </ul>
+  </body>
+</html>`);
 });
 
-var inc=0;
-router.get('/color.txt',function(req,res){
-  var color="";
-  inc++;
-  if(inc ==1 ){
-    color="red";
-  } else if (inc == 2 ){
-    color="yellow";
-  }else if (inc == 3){
-    color="green";
-  }else if (inc == 4){
-    color="blue";
-    inc=0;
-  }
-  res.send(color);
-});
+
 
 
 
