@@ -53,6 +53,7 @@ function about_button(){
         if(this.readyState==4 && this.status==200){
             document.getElementById("postcont").innerHTML=this.responseText;
         }
-     }
-
+     };
+    xmlhttp.open("GET","/content.ajax",true);
+    xmlhttp.send();
  }
