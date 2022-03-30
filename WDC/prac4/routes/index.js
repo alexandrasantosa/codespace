@@ -87,6 +87,7 @@ router.get('/color.html', function(req, res, next) {
 //task 4-2
 var inc=0;
 router.get('/color.html',function(req,res,next){
+  //header change red, yellow , green ,blue in order
   if(inc%4 == 0){
    res.send('red');
   }
@@ -94,9 +95,14 @@ router.get('/color.html',function(req,res,next){
    res.send('yellow');
   }
   if(inc%4 == 2){
-    res.send('green')
+    res.send('green');
   }
-})
+  if(inc%4== 3){
+    res.send('blue');
+  }
+ inc++;
+ 
+});
 
 
 //task4-5
