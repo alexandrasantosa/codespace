@@ -114,6 +114,15 @@ router.get('/color.txt',function(req,res,next){
 });
 
 
+//task4-3
+router.get('/contact.ajax', function(req, res, next) {
+  res.send(`<a href ="https://www.gmail.com/">Contact our email</a>`);
+});
+router.get('/search.ajax', function(req, res, next) {
+  res.send(`<input placeholder=">Contact our email</a>`);
+});
+
+
 
 
 

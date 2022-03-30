@@ -13,4 +13,35 @@ function time_stamp(){
 
 //task4.4
 
-function 
+function contact_button(){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function(){
+        if(this.readyState==4 && this.status==200){
+            document.getElementById("main").innerHTML=this.responseText;
+        }
+    };
+    xmlhttp.open("GET","/contact.ajax",true);
+    xmlhttp.send();
+}
+
+function search_button(){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function(){
+        if(this.readyState==4 && this.status==200){
+            document.getElementById("main").innerHTML=this.responseText;
+        }
+    };
+    xmlhttp.open("GET","/search.ajax",true);
+    xmlhttp.send();
+}
+
+function about_button(){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange=function(){
+        if(this.readyState==4 && this.status==200){
+            document.getElementById("main").innerHTML=this.responseText;
+        }
+    };
+    xmlhttp.open("GET","/search.ajax",true);
+    xmlhttp.send();
+}
