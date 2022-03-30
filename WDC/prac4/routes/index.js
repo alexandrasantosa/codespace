@@ -92,15 +92,16 @@ router.get('/color.html', function(req, res, next) {
 var testing=false;
 router.get('/accept',function(req,res,next){
   if(testing==true){
-    res.status(200);
+    res.status(200).send('<p>tesetaccept</p');
   }
   testing=true;
-
 });
 
 router.get('/content.ajax',function(req,res,next){
   if(testing==false){
-    res.status(403).send('');
+    res.status(403);
+    //send empty
+    res.send('');
   } else {
     res.send('<p>1</p> <p>2</p>');
   }
