@@ -51,7 +51,7 @@ function about_button(){
      var xmlhttp= newXMLHttpRequest();
      xmlhttp.onreadystatechange=function(){
         if(this.readyState==4 && this.status==200){
-            document.getElementById("main").innerHTML=this.responseText;
+            document.getElementById("postcont").innerHTML=this.responseText;
         }
      }
 
