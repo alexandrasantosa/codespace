@@ -45,7 +45,6 @@ router.get('/color.html', function(req, res, next) {
   }
   if (incr%4 == 1){
     res.send(`<!DOCTYPE html> <html lang="en">
-
 <head>
   <title>Task3.2</title>
   <meta charset="UTF-8">
