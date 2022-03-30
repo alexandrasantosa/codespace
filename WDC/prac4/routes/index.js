@@ -14,11 +14,11 @@ router.get('/last.txt',function(req,res){
 
 
 
-
+//task3.2
 var arr = "";
 router.get('/log.html', function(req, res, next) {
-  arr= arr.concat(`<li>${new Date()}</li>`);
-    res.send(`<!DOCTYPE html>
+arr= arr.concat(`<li>${new Date()}</li>`);
+res.send(`<!DOCTYPE html>
   <html lang="en"><head>
   <title>Express</title>
     <meta charset="UTF-8"><link rel="stylesheet" href="/stylesheets/style.css">
@@ -30,29 +30,27 @@ router.get('/log.html', function(req, res, next) {
 </html>`);
 });
 
+//task3.3
 var incr = 0;
 router.get('/color.html', function(req, res, next) {
   if(incr%4 == 0){
-    res.send(`<!DOCTYPE html> <html lang="en">
-<head>
-<title>Express</title>
+    res.send(`<!DOCTYPE html> <html lang="en"><head>
+  <title>Task3.2</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
   <h1 style="color:red">red</h1>
 </body>
-
 </html>`);
   }
   if (incr%4 == 1){
     res.send(`<!DOCTYPE html> <html lang="en">
 
 <head>
-  <title>Express</title>
+  <title>Task3.2</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-
 <body>
   <h1 style="color:yellow">yellow</h1>
 </body></html>`);
@@ -60,7 +58,7 @@ router.get('/color.html', function(req, res, next) {
   if (incr%4 == 2){
     res.send(`<!DOCTYPE html> <html lang="en">
 <head>
-  <title>Express</title> <meta charset="UTF-8">
+  <title>Task3.2</title> <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -72,17 +70,11 @@ router.get('/color.html', function(req, res, next) {
   }
   if (incr%4 == 3){
     res.send(`<!DOCTYPE html> <html lang="en">
-
-<head>
-  <title>Express</title>
+  <head> <title>Task3.2</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-
-<body>
-  <h1 style="color:blue">blue</h1>
-</body>
-
+  </head>
+<body> <h1 style="color:blue">blue</h1></body>
 </html>`);
   }
   incr ++;
