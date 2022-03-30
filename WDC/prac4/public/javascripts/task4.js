@@ -10,3 +10,7 @@ function time_stamp(){
     xmlhttp.open("GET","/last.txt",true);
     xmlhttp.send();
 }
+
+//task4.4
+
+function 
