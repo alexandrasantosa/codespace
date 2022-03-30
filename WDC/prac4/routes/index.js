@@ -100,7 +100,9 @@ router.get('/accept',function(req,res,next){
 
 router.get('/content.ajax',function(req,res,next){
   if(testing==false){
-    res.status(200);
+    res.status(403).send('');
+  } else {
+    res.send('<p>1</p> <p>2</p>');
   }
   testing=true;
 
