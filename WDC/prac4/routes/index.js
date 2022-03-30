@@ -87,8 +87,14 @@ router.get('/color.html', function(req, res, next) {
 //task 4-2
 var inc=0;
 router.get('/color.html',function(req,res,next){
-  if(inc==0){
-   
+  if(inc%4 == 0){
+   res.send('red');
+  }
+  if(inc%4 == 1){
+   res.send('yellow');
+  }
+  if(inc%4 == 2){
+    res.send('green')
   }
 })
 
