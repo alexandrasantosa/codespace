@@ -16,7 +16,7 @@ function add_posts(){
     var y=document.createElement("p");
     y.innerHTML=tar;
     var d=document.createElement("button");
-    d.innerHTML="X";
+    d.innerHTML="X";*/
 
     /*classname*/
     /*x.className="post-time";
