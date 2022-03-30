@@ -59,16 +59,12 @@ router.get('/color.html', function(req, res, next) {
 
 <body>
   <h1 style="color:yellow">yellow</h1>
-</body>
-
-</html>`);
+</body></html>`);
   }
   if (incr%4 == 2){
     res.send(`<!DOCTYPE html> <html lang="en">
-
 <head>
-  <title>Express</title>
-  <meta charset="UTF-8">
+  <title>Express</title> <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
@@ -116,6 +112,8 @@ router.get('/color.txt',function(req,res,next){
     inc ++;
 
 });
+
+
 
 
 
