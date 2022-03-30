@@ -88,29 +88,10 @@ router.get('/color.html', function(req, res, next) {
   incr ++;
 });
 
-
-var inc=0;
-router.get('/color.txt',function(req,res,next){
-  if (inc%4==0){
-    res.send('red');
-  }
-
-  if (inc%4==1){
-    res.send('yellow');
-  }
-
-  if (inc%4 == 2){
-    res.send('green');
-  }
-  if (inc%4 == 3){
-    res.send('blue');
-  }
-    inc ++;
-
-});
+//task4-5
 
 
-//task4-3
+//task4-4
 router.get('/contact.ajax', function(req, res, next) {
   res.send(`<a href ="https://www.gmail.com/">email</a>`);
 });

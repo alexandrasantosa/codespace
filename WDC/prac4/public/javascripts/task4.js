@@ -45,3 +45,14 @@ function about_button(){
     xmlhttp.open("GET","/about.ajax",true);
     xmlhttp.send();
 }
+
+//task 4-5
+ function get_content(){
+     var xmlhttp= newXMLHttpRequest();
+     xmlhttp.onreadystatechange=function(){
+        if(this.readyState==4 && this.status==200){
+            document.getElementById("main").innerHTML=this.responseText;
+        }
+     }
+
+ }
