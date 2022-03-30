@@ -116,14 +116,14 @@ router.get('/color.txt',function(req,res,next){
 
 //task4-3
 router.get('/contact.ajax', function(req, res, next) {
-  res.send(`<a href ="https://www.gmail.com/">Contact our email</a>`);
+  res.send(`<a href ="https://www.gmail.com/">email</a>`);
 });
 router.get('/search.ajax', function(req, res, next) {
-  res.send(`<input placeholder=">Contact our email</a>`);
+  res.send(`<input><button>search</button>`);
 });
-
-
-
+router.get('/about.ajax', function(req, res, next) {
+  res.send(`<p>Content</p>`);
+});
 
 
 module.exports = router;
