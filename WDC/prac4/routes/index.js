@@ -89,7 +89,13 @@ router.get('/color.html', function(req, res, next) {
 });
 
 //task4-5
+var testing=false;
+router.get('/accept',function(req,res,next){
+  if(testing=true){
+    res.send(200);
+  }
 
+})
 
 //task4-4
 router.get('/contact.ajax', function(req, res, next) {
