@@ -6,11 +6,15 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
+//task3-1
 var date;
 router.get('/last.txt',function(req,res){
   res.send(date);
   date=new Date();
 });
+
+
 
 
 
@@ -78,6 +82,11 @@ router.get('/color.html', function(req, res, next) {
   }
   incr ++;
 });
+
+
+//task 4-2
+
+
 
 //task4-5
 var testing=false;
