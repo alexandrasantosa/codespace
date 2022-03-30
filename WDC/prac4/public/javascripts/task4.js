@@ -42,6 +42,6 @@ function about_button(){
             document.getElementById("main").innerHTML=this.responseText;
         }
     };
-    xmlhttp.open("GET","/search.ajax",true);
+    xmlhttp.open("GET","/about.ajax",true);
     xmlhttp.send();
 }
