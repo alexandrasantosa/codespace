@@ -85,7 +85,10 @@ router.get('/color.html', function(req, res, next) {
 
 
 //task 4-2
-
+var inc=0;
+router.get('/color.html',function(req,res,next){
+  
+})
 
 
 //task4-5
