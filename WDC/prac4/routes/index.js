@@ -19,17 +19,13 @@ var arr = "";
 router.get('/log.html', function(req, res, next) {
   arr= arr.concat(`<li>${new Date()}</li>`);
     res.send(`<!DOCTYPE html>
-  <html lang="en">
-  <head>
+  <html lang="en"><head>
   <title>Express</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <script src="html.js"></script>
+    <meta charset="UTF-8"><link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="task4.js"></script>
   </head>
   <body>
-  <ul style="list-style-type:dot;">
-    ${arr}
-  </ul>
+  <ul style="list-style-type:dot;"> ${arr}</ul>
   </body>
 </html>`);
 });
