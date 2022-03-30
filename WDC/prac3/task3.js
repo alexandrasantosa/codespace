@@ -10,13 +10,13 @@ function mouse_over(){
 
 
 function add_posts(){
-    /*var tar=document.getElementsByTagName("textarea")[0].value;
-    var x=document.createElement("p");
-    x.innerHTML= new Date();
-    var y=document.createElement("p");
-    y.innerHTML=tar;
-    var d=document.createElement("button");
-    d.innerHTML="X";*/
+    /*var tar=document.getElementsByTagName("textarea")[0].value;*/
+    /*var x=document.createElement("p");
+    /*x.innerHTML= new Date();*/
+    /*var y=document.createElement("p");*/
+   /* y.innerHTML=tar;*/
+   /* var d=document.createElement("button");*/
+    /*d.innerHTML="X";*/
 
     /*classname*/
     /*x.className="post-time";
