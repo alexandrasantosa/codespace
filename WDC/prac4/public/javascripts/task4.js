@@ -95,4 +95,4 @@ function color_request(){
     xmlhttp.open("GET","/color.txt",true);
     xmlhttp.send();
 
-};
+}
