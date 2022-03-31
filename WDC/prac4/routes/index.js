@@ -58,6 +58,8 @@ router.get('/color.html', function(req, res, next) {
   <h1 style="color:yellow">yellow</h1>
 </body></html>`);
   }
+
+  //green
   if (incr%4 == 2){
     res.send(`<!DOCTYPE html> <html lang="en">
 <head>
@@ -66,18 +68,20 @@ router.get('/color.html', function(req, res, next) {
 </head>
 
 <body>
-  <h1 style="color:green">green</h1>
+  <h1 style="color:green">Green</h1>
 </body>
 
 </html>`);
   }
+
+  //blue
   if (incr%4 == 3){
     res.send(`<!DOCTYPE html> <html lang="en">
   <head> <title>Task3.2</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
-<body> <h1 style="color:blue">blue</h1></body>
+<body> <h1 style="color:blue">Blue</h1></body>
 </html>`);
   }
   incr ++;
@@ -86,7 +90,7 @@ router.get('/color.html', function(req, res, next) {
 
 //task 4-2
 var inc=0;
-router.get('/color.html',function(req,res,next){
+router.get('/color.txt',function(req,res,next){
   //header change red, yellow , green ,blue in order
   if(inc%4 == 0){
    res.send('red');
@@ -101,7 +105,7 @@ router.get('/color.html',function(req,res,next){
     res.send('blue');
   }
  inc++;
- 
+
 });
 
 
