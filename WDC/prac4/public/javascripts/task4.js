@@ -90,7 +90,7 @@ function color_request(){
                 document.getElementById('col1').style.color="blue";
             }
         }
-    }
+    };
 
     xmlhttp.open("GET","/color.txt",true);
     xmlhttp.send();
