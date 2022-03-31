@@ -65,29 +65,30 @@ function color_request(){
     xmlhttp.onreadystatechange=function(){
         if(this.readyState ==4 && this.status == 200){
             //get the header
-            document.getElementById('col1').innerHTML=this.responseText;
-            var he1=document.getElementById('col1').innerHTML;
+            var hea1=document.getElementById('col1');
+            hea1.innerHTML=this.responseText;
+            var he1=hea1.innerHTML;
 
 
             //if statement to change the header color
             if (he1 == "red" ){
                 //first change was red
-                document.getElementById('col1').style.color="red";
+                hea1.style.color="red";
             }
 
             if (he1 == "yellow" ){
                 //first change was yellow
-                document.getElementById('col1').style.color="yellow";
+                hea1.style.color="yellow";
             }
 
             if (he1  == "green" ){
                 //first change was gren
-                document.getElementById('col1').style.color="green";
+               hea1.style.color="green";
             }
 
             if (he1 == "blue" ){
                 //first change was blue
-                document.getElementById('col1').style.color="blue";
+                hea1.style.color="blue";
             }
         }
     };
