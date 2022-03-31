@@ -44,7 +44,7 @@ router.get('/color.html', function(req, res, next) {
   <title>Task3.2</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body><h1>red</h1></body>
+<body><h1 style="color:red">red</h1></body>
 </html>`);
   }
 
@@ -56,7 +56,7 @@ router.get('/color.html', function(req, res, next) {
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body> <h1>Yellow</h1></body></html>`);
+<body> <h1 style="color:yellow">Yellow</h1></body></html>`);
   }
 
   //green
@@ -81,7 +81,7 @@ router.get('/color.html', function(req, res, next) {
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
-<body> <h1>Blue</h1></body>
+<body> <h1 style="color:blue">Blue</h1></body>
 </html>`);
   }
   incr ++;
