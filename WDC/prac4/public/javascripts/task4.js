@@ -64,20 +64,7 @@ function color_request(){
     var xhttp= new XMLHttpRequest();
     xhttp.onreadystatechange=function(){
         if(this.readyState ==4 && this.status == 200){
-             document.getElementById("col1").innerHTML=this.responseText;
-             var c1= document.getELementById("col1").innerHTML;
-            if(c1=="red"){
-                document.getElementById("col1").style.color="red";
-            }
-            if(c1=="yellow"){
-                document.getElementById("col1").style.color="yellow";
-            }
-            if(c1=="green"){
-                document.getElementById("col1").style.color="green";
-            }
-            if(c1=="blue"){
-                document.getElementById("col1").style.color="blue";
-            }
+            
 
         }
     }
