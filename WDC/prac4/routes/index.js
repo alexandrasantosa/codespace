@@ -16,8 +16,6 @@ router.get('/last.txt',function(req,res){
 
 
 
-
-
 //task3.2
 var arr = "";
 router.get('/log.html', function(req, res, next) {
@@ -44,7 +42,7 @@ router.get('/color.html', function(req, res, next) {
   <title>Task3.2</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body><h1>red</h1></body>
+<body><h1 style="color:red">Red</h1></body>
 </html>`);
   }
 
@@ -66,11 +64,7 @@ router.get('/color.html', function(req, res, next) {
   <title>Task3.2</title> <meta charset="UTF-8">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-
-<body>
-  <h1 style="color:green">Green</h1>
-</body>
-
+<body><h1 style="color:green">Green</h1></body>
 </html>`);
   }
 
@@ -84,6 +78,8 @@ router.get('/color.html', function(req, res, next) {
 <body> <h1 style="color:blue">Blue</h1></body>
 </html>`);
   }
+
+  //remember to comeback to red
   incr ++;
 });
 
@@ -104,6 +100,8 @@ router.get('/color.txt',function(req,res,next){
   if(inc%4== 3){
     res.send('blue');
   }
+
+  //if this comes to an end, print back again to red
  inc++;
 
 });
