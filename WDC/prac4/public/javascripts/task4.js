@@ -71,22 +71,22 @@ function color_request(){
             //if statement to change the header color
             if (he1.innerHTMl == "red" ){
                 //first change was red
-                he.style.color="red";
+                he1.style.color="red";
             }
 
             if (he1.innerHTMl == "yellow" ){
                 //first change was yellow
-                he.style.color="yellow";
+                he1.style.color="yellow";
             }
 
             if (he1.innerHTMl == "green" ){
                 //first change was gren
-                he.style.color="green";
+                he1.style.color="green";
             }
 
             if (he1.innerHTMl == "blue" ){
                 //first change was blue
-                he.style.color="blue";
+                he1.style.color="blue";
             }
         }
     }
