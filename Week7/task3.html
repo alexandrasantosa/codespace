@@ -12,7 +12,7 @@
     </head>
 
     <body>
-      <div id="vue">
+      <div id="vue" v-bind="">
         <div id="main" class="container" v-if="!menu">
             <button class="right" v-on:click="menu=true;" >MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
@@ -44,7 +44,7 @@
         <div id="menu" class="container"  v-else>
             <button class="right" v-on:click="menu=false;">BACK</button>
             <p>&nbsp;</p>
-            <span>Background Color:</span><input type="text" onchange="change_color(this)">
+            <span>Background Color:</span><input type="text" v-model>
         </div>
  </div>
     </body>
