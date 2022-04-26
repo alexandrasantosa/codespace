@@ -26,9 +26,9 @@
             <textarea rows="4" cols="60" placeholder="Type your text here..." v-model="post_content_input"></textarea>
             <br />
             <div class="controls left">
-                <input type="number" name="quantity" value="1" id="n1" /><br />
-                <input type="radio" name="color" value="blue" /> Blue<br />
-                <input type="radio" name="color" value="red" /> Red<br />
+                <input type="number" name="quantity" value="1" v-model="post_repeat_input"/><br />
+                <input type="radio" name="color" value="blue" v-model="post_color_input" /> Blue<br />
+                <input type="radio" name="color" value="red" v-model="post_color_input"/> Red<br />
                 <button type="button" v-on:click="post_data.push({time:new Date(),content:post_content_input}) ">Post</button>
             </div>
             <div class="controls left">
