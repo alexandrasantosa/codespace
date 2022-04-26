@@ -16,7 +16,7 @@
         <div id="main" class="container">
             <button class="right" onclick="open_menu()">MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
-            <div id="mcount" >{{mcount}}</div>
+            <div id="mcount" v-on:mouseenter="mcount++">{{mcount}}</div>
             <div id="posts"></div>
             <hr />
             <textarea rows="4" cols="60" id="tar">Type your text here...</textarea>
@@ -28,7 +28,7 @@
                 <button type="button" >Post</button>
             </div>
             <div class="controls left">
-                <input type="range" name="visible" min="1" max="10" value="10" onchange="add_posts()" /><br />
+                <input type="range" name="visible" min="1" max="10" value="10"  /><br />
                 <input id="bld" type="checkbox" name="style" value="bold" /> Bold<br />
                 <input id="itl" type="checkbox" name="style" value="italic" /> Italic<br />
                 <select id="sl1">
