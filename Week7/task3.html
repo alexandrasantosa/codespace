@@ -13,8 +13,8 @@
 
     <body>
       <div id="vue">
-        <div id="main" class="container">
-            <button class="right" onclick="open_menu()">MENU</button>
+        <div id="main" class="container" v-if="!menu">
+            <button class="right" v-on:click="menu=true;" >MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
             <div id="mcount" v-on:mouseenter="mcount++">{{mcount}}</div>
             <div id="posts"></div>
@@ -41,8 +41,8 @@
             <hr />
         </div>
 
-        <div id="menu" class="container" style="display:none;">
-            <button class="right" onclick="back_menu()">BACK</button>
+        <div id="menu" class="container"  v-else>
+            <button class="right" v-on:click="menu=false;">BACK</button>
             <p>&nbsp;</p>
             <span>Background Color:</span><input type="text" onchange="change_color(this)">
         </div>
