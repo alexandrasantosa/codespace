@@ -3,7 +3,8 @@ var app = new Vue({
     data: {
       mcount: '',
       menu:false,
-      background_color:''
+      background_value:'',
+      background_color:'',
 
     }
   });
