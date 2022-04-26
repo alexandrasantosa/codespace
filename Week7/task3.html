@@ -16,7 +16,7 @@
         <div id="main" class="container">
             <button class="right" onclick="open_menu()">MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
-            <div id="mcount" onmouseover="mouse_over()"></div>
+            <div id="mcount" >{{mcount}}</div>
             <div id="posts"></div>
             <hr />
             <textarea rows="4" cols="60" id="tar">Type your text here...</textarea>
@@ -25,7 +25,7 @@
                 <input type="number" name="quantity" value="1" id="n1" /><br />
                 <input type="radio" name="color" value="blue" /> Blue<br />
                 <input type="radio" name="color" value="red" /> Red<br />
-                <button type="button" onclick="add_posts()">Post</button>
+                <button type="button" >Post</button>
             </div>
             <div class="controls left">
                 <input type="range" name="visible" min="1" max="10" value="10" onchange="add_posts()" /><br />
