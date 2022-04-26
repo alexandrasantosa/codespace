@@ -17,7 +17,11 @@
             <button class="right" v-on:click="menu=true;" >MENU</button>
             <h1>Part 3 - Javascript Playground</h1>
             <div id="mcount" v-on:mouseenter="mcount++">{{mcount}}</div>
-            <div id="posts"></div>
+            <div id="posts" v-for="post in post_data">
+                <p class="post-time">{{post.time.toLocaleString()}}</p>
+                <p class="post-content">{{post.content}}</p>
+
+            </div>
             <hr />
             <textarea rows="4" cols="60" id="tar">Type your text here...</textarea>
             <br />
