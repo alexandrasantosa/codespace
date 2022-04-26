@@ -5,7 +5,8 @@ var app = new Vue({
       menu:false,
       background_value:'',
       background_color:'',
-      post_data:[{time:new Date(),content:"Hello"}]
+      post_content_input:'',
+      post_data:[{time:new Date(),content:"hi"}]
 
     }
   });
