@@ -29,7 +29,7 @@
                 <input type="number" name="quantity" value="1" id="n1" /><br />
                 <input type="radio" name="color" value="blue" /> Blue<br />
                 <input type="radio" name="color" value="red" /> Red<br />
-                <button type="button" >Post</button>
+                <button type="button" v-on:click="post_data.push({time:new Date(),content:post_content_input}) ">Post</button>
             </div>
             <div class="controls left">
                 <input type="range" name="visible" min="1" max="10" value="10"  /><br />

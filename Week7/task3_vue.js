@@ -8,5 +8,11 @@ var app = new Vue({
       post_content_input:'',
       post_data:[{time:new Date(),content:"hi"}]
 
+    },
+
+    methods:{
+        new_post:function(){
+            this.post_data.push({time:new Date(),content:this.post_content_input});
+        }
     }
   });
