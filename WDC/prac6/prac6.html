@@ -76,7 +76,12 @@
                     <hr />
 
                     <div id="stores">
-
+                        <div class="store" v-for="store in s_arr">
+                            <img vbind:src="store.img" alt="A picture of the storefront" />
+                             <h3>{{store.name}}</h3>
+                              <p>{{store.address}}</p>
+                             <span>{{store.counter}} people have been here</span><button v-on:click="store.counter+=1">I've been here</button>
+                        </div>
                     </div>
 
                 </aside>
