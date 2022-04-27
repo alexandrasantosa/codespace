@@ -54,6 +54,8 @@ var vueinst = new Vue({
             { name:'Milton',address:'33 McGregor Street, Milton, 5880',counter: 0, img:'https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Greggs_store_front.JPG/320px-Greggs_store_front.JPG' }
 
     ],
+    c_text:'type your comment here',
+    c_arr:[],
 
 
     },
