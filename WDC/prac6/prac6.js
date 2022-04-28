@@ -47,7 +47,7 @@ var vueinst = new Vue({
     choose:'Choose ...',
     special:SPECIALS[0],
     show_ad:true,
-    darkmode:false,
+    dark_mode:false,
     s_arr:[
             { name:'Adelaide City',  address:'45 Florabunda Lane, Adelaide, 5000', counter: 0, img:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/11_Gloddaeth_Street%2C_Llandudno_shop_front.jpg/320px-11_Gloddaeth_Street%2C_Llandudno_shop_front.jpg' },
             { name:'Steelton South', address:'77 Weigall Avenue, Steelton, 5413',  counter: 0, img:'https://upload.wikimedia.org/wikipedia/commons/4/42/Well-shop-front.jpg' },
