@@ -19,5 +19,33 @@ router.get('/brew',function(req,res,next){
 
 });
 
+//Task1-2
+var c=0;
+var prev='';
+router.post('/pass-it-on',function(req,res,next){
+  var b_print=req.body.message;
+  var a_print=req.body.submit;
+
+  if(b_print==''){
+    res.status(400).send();
+  }
+  else
+  {
+    if (c >0){
+     res.send(prev);
+     prev=b_print;
+
+    c+
+
+  }
+  else{
+    if (c==0 && b_print!=''){
+      res.send('first');
+      prev=b_print;
+      a++
+    }
+  }
+  }
+});
 
 module.exports = router;
