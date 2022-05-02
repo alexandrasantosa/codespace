@@ -73,7 +73,7 @@ h1{
     font: Arial;
     text-align:center;
     color:black;
-    font-size :250px;
+    font-size :115px;
 }
 
 #divsec1 {
@@ -83,8 +83,18 @@ h1{
   position:absolute;
 }
 
+main{
+  top:25vh;
+  position:relative;
+  text-align:center;
+}
 
 
+input[name=a]{
+  border:1px solid grey;
+  border-radius:2em;
+  padding:0.2em;
+}
 
 
 /* Footer */
