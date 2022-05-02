@@ -35,14 +35,14 @@ router.post('/pass-it-on',function(req,res,next){
      res.send(prev);
      prev=b_print;
 
-    c+
+    c++
 
   }
   else{
     if (c==0 && b_print!=''){
       res.send('first');
       prev=b_print;
-      a++
+      c++
     }
   }
   }
