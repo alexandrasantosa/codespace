@@ -3,8 +3,8 @@ var router= express.Router();
 
 let post_list=[
     {
-        title:"hi" , desc:"a",tag:["123"],
-        title:"hi" , desc:"a",tag:["123"],
+        title:"hi" , desc:"a",tag:["123"]},
+        {title:"hi" , desc:"a",tag:["123"],
     }
 ];
 
@@ -36,6 +36,7 @@ router.post('/login',function(req,res,nexr){
         res.sendStatus(200);
 
     } else {
+        users[req.body.username]={username:req.body.username,name:req.body.name,password}
         console.log("bad login");
         res.sendStatus(401);
       }
