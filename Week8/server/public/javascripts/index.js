@@ -31,10 +31,15 @@ router.post('/new',function(req,res,nexr){
 router.post('/login',function(req,res,nexr){
     console.log(req.body);
     if ("username" in req.body && 'password' in req.body){
-        if(req.body.username in users && users[req.body.username])
-    } else {
+        if(req.body.username in users && users[req.body.username].password==req.body.password){
+        console.log("success");
 
+    } else {
+        console.log("bad login");
     }
+     } else {
+        console.log("bad request");
+
 });
 
 
