@@ -33,12 +33,16 @@ router.post('/login',function(req,res,nexr){
     if ("username" in req.body && 'password' in req.body){
         if(req.body.username in users && users[req.body.username].password==req.body.password){
         console.log("success");
+        res.sendStatus(200);
 
     } else {
         console.log("bad login");
-    }
+        res.sendStatus(401);
+      }
      } else {
         console.log("bad request");
+        res.sendStatus(400);
+     }
 
 });
 
