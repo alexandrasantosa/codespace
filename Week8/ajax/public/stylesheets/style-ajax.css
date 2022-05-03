@@ -1,0 +1,27 @@
+body {
+  font-family: "Cormorant Garamond", Garamond, serif;
+  background-color: LightSlateGray;
+  background-image: url("../images/cross.svg"), url("../images/cross.svg"), url("../images/cross.svg");
+  background-repeat: repeat;
+  background-size: 37px, 79px, 101px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+#container {
+    max-width: 50em;
+    margin: 1em auto;
+    padding: 2em;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0 0.5em 0 #222;
+}
+
+main {
+    text-align: justify;
+}
+
+a {
+  color: #00B7FF;
+}
