@@ -1,15 +1,40 @@
 var express = require("express");
 var router= express.Router();
 
-router.get('test',function(req,res,next){
-    res.send('This is a test');
-});
+let post_list=[
+    {
+        title:
+    }
+];
 
 let users ={
     admin:{username: "admin",  name: " Some Admin" , password: "password123" },
     alice:{username: "alice",  name: " Alice User" , password: "horse" },
 
 }
+
+router.get('/test',function(req,res,next){
+    res.send('This is a test');
+});
+
+router.get('/posts',function(req,res,next){
+    res.json(post_list);
+});
+
+router.post('/new',function(req,res,nexr){
+    console.log(req.body);
+    post_list.push(req.body);
+});
+
+
+router.post('/login',function(req,res,nexr){
+    console.log(req.body);
+    if ("username in req.body && 'password)
+});
+
+
+
+
 function new_post(){
     let title=document.getElementById('post-title').value;
     let desc=document.getElementById('post-content').value;
@@ -35,7 +60,7 @@ function reset_posts(){
         container.children[1].remove();
     }
 }
-let post_list=[];
+
 function add_post(title,desc,tags){
     let post=document.createElement('div');
     post.classList.add("post");
