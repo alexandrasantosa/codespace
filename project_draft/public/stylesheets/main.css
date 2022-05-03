@@ -105,9 +105,10 @@ input[name=a]{
   height: 3 rem;            /* Footer height */
 }
 
-.footer-social .social {
+#footer .social {
   text-align:center;
   padding-bottom:25px;
+  color:black;
 }
 
 
