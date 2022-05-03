@@ -3,7 +3,8 @@ var router= express.Router();
 
 let post_list=[
     {
-        title:
+        title:"hi" , desc:"a",tag:["123"],
+        title:"hi" , desc:"a",tag:["123"],
     }
 ];
 
@@ -29,7 +30,11 @@ router.post('/new',function(req,res,nexr){
 
 router.post('/login',function(req,res,nexr){
     console.log(req.body);
-    if ("username in req.body && 'password)
+    if ("username" in req.body && 'password' in req.body){
+        if(req.body.username in users && users[req.body.username])
+    } else {
+
+    }
 });
 
 
