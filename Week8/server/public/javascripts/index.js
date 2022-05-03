@@ -1,3 +1,15 @@
+var express = require("express");
+var router= express.Router();
+
+router.get('test',function(req,res,next){
+    res.send('This is a test');
+});
+
+let users ={
+    admin:{username: "admin",  name: " Some Admin" , password: "password123" },
+    alice:{username: "alice",  name: " Alice User" , password: "horse" },
+
+}
 function new_post(){
     let title=document.getElementById('post-title').value;
     let desc=document.getElementById('post-content').value;
@@ -72,3 +84,5 @@ function add_post(title,desc,tags){
 
 
 }
+
+
