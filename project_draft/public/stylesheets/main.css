@@ -84,7 +84,13 @@ h1{
   position:fixed;
 }
 
-
+#divsec2 {
+  width: 100%;
+  height: 50%;
+  float:left;
+  background-color: black; /*pink*/
+  position:fixed;
+}
 
 main{
   position:relative;
