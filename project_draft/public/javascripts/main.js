@@ -1,17 +1,17 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+slide_show(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plus_slides(n) {
+  slide_show(slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function current_slide(n) {
+  slide_show(slideIndex = n);
 }
 
-function showSlides(n) {
+function slide_show(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
