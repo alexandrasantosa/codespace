@@ -76,6 +76,11 @@ h1{
     font-size :115px;
 }
 
+main{
+  position:absolute;
+  text-align:center;
+}
+
 #divsec1 {
   width: 100%;
   height: 50%;
@@ -88,14 +93,12 @@ h1{
   width: 100%;
   height: 50%;
   float:left;
+  bottom:0;
   background-color: black; /*pink*/
   position:fixed;
 }
 
-main{
-  position:relative;
-  text-align:center;
-}
+
 
 
 input[name=a]{
