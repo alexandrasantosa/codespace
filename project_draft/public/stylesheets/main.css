@@ -78,10 +78,7 @@ h1{
     font-size :115px;
 }
 
-main{
-  position:absolute;
-  text-align:center;
-}
+
 
 #divsec1 {
   width: 100%;
@@ -106,7 +103,7 @@ main{
 input[name=a]{
   border:1px solid grey;
   border-radius:2em;
-  padding:1 em;
+  padding:4 em;
 }
 
 
