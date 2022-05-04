@@ -84,6 +84,8 @@ h1{
   position:fixed;
 }
 
+
+
 main{
   position:relative;
   text-align:center;
@@ -109,7 +111,6 @@ input[name=a]{
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
-
   position: relative;
   margin: auto;
 }
