@@ -108,7 +108,7 @@ input[name=a]{
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
-  max-height: 500px;
+  max-height: px;
   position: relative;
   margin: auto;
 }
