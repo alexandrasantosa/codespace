@@ -121,11 +121,13 @@ input[name=a]{
   height: 3 rem;            /* Footer height */
 }
 
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
+  float:right;
 }
 
 /* Hide the images by default */
