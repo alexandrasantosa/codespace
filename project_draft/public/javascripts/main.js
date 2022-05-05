@@ -27,11 +27,11 @@ function slide_show(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+/* Log-in popup */
 function open_form() {
-  document.getElementById("myForm").style.display = "block";
+  document.getElementById("loginform").style.display = "block";
 }
 
 function close_form() {
-  document.getElementById("myForm").style.display = "none";
+  document.getElementById("loginform").style.display = "none";
 }
