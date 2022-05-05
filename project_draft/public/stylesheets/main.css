@@ -121,20 +121,15 @@ input[name=a]{
   height: 3 rem;            /* Footer height */
 }
 
-#footer .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
-}
+
+
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
-  float:right;
+
 }
 
 /* Hide the images by default */
