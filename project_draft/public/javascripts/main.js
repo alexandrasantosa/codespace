@@ -34,6 +34,10 @@ function close_form() {
   document.getElementById("loginform").style.display = "none";
 }
 
+/* Log-in popup */
+function openform() {
+  document.getElementById("LoginForm").style.display = "block";
+}
 
 function login(form) {
   var un = form.Username.value;
