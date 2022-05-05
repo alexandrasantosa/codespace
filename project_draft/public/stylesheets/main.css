@@ -132,8 +132,8 @@ input[name=a]{
 
 /* Slideshow container */
 .slideshowdiv {
-  max-width: 1000px;
-  max-height:300px;
+  max-width: 750px;
+
   position: relative;
   margin: auto;
 
