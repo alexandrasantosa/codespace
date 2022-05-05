@@ -89,7 +89,6 @@ h1{
   width: 100%;
   height: 50%;
   float:left;
-
   background-color: white; /*pink*/
   position:fixed;
 }
@@ -133,7 +132,7 @@ input[name=a]{
 
 /* Slideshow container */
 .slideshowdiv {
-  max-width: 500px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 
