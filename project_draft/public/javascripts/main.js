@@ -26,3 +26,12 @@ function slide_show(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+function open_form() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function close_form() {
+  document.getElementById("myForm").style.display = "none";
+}
