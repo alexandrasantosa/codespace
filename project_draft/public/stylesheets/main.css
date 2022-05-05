@@ -28,6 +28,10 @@ ul.sidenav button{
 
 }
 
+.copyright{
+  text-align:center;
+}
+
 /* Bootstrap for responsive size of the site */
 
 @media screen and (max-width: 1366px) {
@@ -45,6 +49,7 @@ ul.sidenav button{
 
 
     div.divsec1{margin-left: 0;}
+    div.divsec2{margin-left: 0;}
 }
 
 @media screen and (max-width: 784px) {
@@ -129,8 +134,9 @@ input[name=a]{
 /* Slideshow container */
 .slideshowdiv {
   max-width: 500px;
-  position: absolute;
+  position: relative;
   margin: auto;
+
 
 }
 
