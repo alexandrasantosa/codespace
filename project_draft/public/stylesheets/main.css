@@ -140,7 +140,7 @@ input[name=a]{
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.previous , .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
