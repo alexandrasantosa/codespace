@@ -30,6 +30,9 @@ ul.sidenav button{
   text-align:center;
 }
 
+.social{
+  text-align:center;
+}
 /* Bootstrap for responsive size of the site */
 
 @media screen and (max-width: 1366px) {
