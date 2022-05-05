@@ -108,9 +108,9 @@ main{
 
 input[name=a]{
   border:1px solid grey;
-  border-radius:2em;
-  padding:5 px;
-  margin:auto;
+
+  padding:10 px;
+  
 }
 
 
