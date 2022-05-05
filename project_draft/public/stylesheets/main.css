@@ -110,7 +110,7 @@ input[name=a]{
   border:1px solid grey;
 
   padding:10 px;
-  
+
 }
 
 
@@ -129,7 +129,7 @@ input[name=a]{
 /* Slideshow container */
 .slideshowdiv {
   max-width: 500px;
-  position: relative;
+  position: absolute;
   margin: auto;
 
 }
