@@ -7,9 +7,9 @@ function plus_slides(n) {
 }
 
 // Thumbnail image controls
-function current_slide(n) {
-  slide_show(slide_counter = n);
-}
+//function current_slide(n) {
+  //slide_show(slide_counter = n);
+//}
 
 function slide_show(n) {
   let i;
