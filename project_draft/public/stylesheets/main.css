@@ -188,7 +188,7 @@ input[name=a]{
 
 /*pop up log-in */
 /* The popup form - hidden by default */
-.form-popup {
+.formpopup {
   display: none;
   position: fixed;
   bottom: 0;
@@ -207,7 +207,7 @@ input[name=a]{
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
