@@ -99,7 +99,6 @@ h1{
   height: 50%;
   float:left;
   bottom:0;
-
   background-color: #B1A6A4; /*pink*/
   position:fixed;
 }
@@ -113,7 +112,6 @@ main{
 
 input[name=a]{
   border:1px solid grey;
-
   padding:10 px;
 
 }

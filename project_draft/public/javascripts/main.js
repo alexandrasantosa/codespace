@@ -13,7 +13,7 @@ function slide_show(n) {
 
   if (n > slides.length) {slide_counter= 1}
   if (n < 1) {slide_counter = slides.length}
-  for (n = 0; i< slides.length; i++) {
+  for (i = 0; i< slides.length; i++) {
     slides[i].style.display = "none";
   }
 
