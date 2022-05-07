@@ -2,18 +2,18 @@ let slide_counter = 1;
 slide_show(slide_counter);
 
 // Next/previous controls
-function plus_slides(e) {
-  slide_show(slide_counter+= e);
+function plus_slides(n) {
+  slide_show(slide_counter+= n);
 }
 
 
-function slide_show(e) {
+function slide_show(n) {
   let i;
   let slides = document.getElementsByClassName("slide1");
 
-  if (e > slides.length) {slide_counter= 1}
-  if (e < 1) {slide_counter = slides.length}
-  for (e = 0; ie< slides.length; i++) {
+  if (n > slides.length) {slide_counter= 1}
+  if (n < 1) {slide_counter = slides.length}
+  for (n = 0; i< slides.length; i++) {
     slides[i].style.display = "none";
   }
 
