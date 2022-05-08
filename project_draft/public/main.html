@@ -95,5 +95,100 @@
 
 </div>
 
+<div id="Login" class="modal">
+
+
+  <form class="modal-content">
+
+
+  <div class="container">
+
+      <!-- Headings -->
+      <h2>Login to WDC Social Event System </h2>
+      <p class="signup">New around here? Create an account. <a href="#">Join Us!</a> </p>
+      <!-- Username -->
+      Username: <br />
+      <input type="text" name="Uname" placeholder="Email or Username" required>
+
+      <!-- Password-->
+      Password:<br />
+      <input type="password" name="psw" placeholder="Password" required>
+
+      <!-- This will be used later when writing SESSIONS, tick=save_sessions, untick=not_save_sessions -->
+      <label>
+          <p>Remember Me
+          <input type="checkbox" checked="checked" name="remember-session">
+          </p>
+      </label>
+
+      <!-- Actual button to the send data to verify whether users exists-->
+      <button type="login">Login</button>
+
+      <hr />
+      <!-- Login with Social Media -->
+      <div class="socialMedia">
+          <button>Continue with Google</button>
+          <button>Continue with Facebook</button>
+      </div>
+
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+
+      <button onclick="returnMain()" class="cancel_button">Cancel</button>
+      <span class="psw"><a href="#">Forgot Password?</a></span>
+
+  </div>
+
+  </form>
+</div>
+
+
+
+
+<div id="Signup" class="modal">
+
+
+  <form class="modal-content">
+
+      <div class="container">
+
+      <!-- Headings -->
+      <h2>Login to WDC Social Event System </h2>
+      <p class="signup">Already have an account? <a href="#">Sign in!</a> </p>
+      <!-- Username -->
+      Username: <br />
+      <input type="text" name="Uname" placeholder="Email or Username" required>
+
+      <!-- Password-->
+      Password:<br />
+      <input type="password" name="psw" placeholder="Password" required>
+
+      <!-- This will be used later when writing SESSIONS, tick=save_sessions, untick=not_save_sessions -->
+      <label>
+          <p>Remember Me
+          <input type="checkbox" checked="checked" name="remember-session">
+          </p>
+      </label>
+
+      <!-- Actual button to the send data to verify whether users exists-->
+      <button type="login">Sign Up</button>
+
+      <hr />
+      <!-- Login with Social Media -->
+      <div class="socialMedia">
+          <button>Continue with Google</button>
+          <button>Continue with Facebook</button>
+      </div>
+
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+
+      <button onclick="returnMain()" class="cancel_button">Cancel</button>
+      <span class="psw"><a href="#">Forgot Password?</a></span>
+
+  </div>
+  </form>
 
 </html>
