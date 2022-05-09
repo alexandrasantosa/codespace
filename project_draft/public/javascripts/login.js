@@ -7,7 +7,7 @@ function showLogin() {
     // the hidden section (login area)
     var login = document.getElementById("Login");
     var signup = document.getElementById("Signup");
-    
+
     // appear the hidden page (login area)
     login.style.display = "block";
     signup.style.display = "none";
