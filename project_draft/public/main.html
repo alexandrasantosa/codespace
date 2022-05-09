@@ -3,11 +3,9 @@
     <head>
         <title>Welcome!</title>
         <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/a3b5e2506d.js" crossorigin="anonymous"></script>
         <script src="/javascripts/main.js" defer></script>
-        <script src="/javascripts/login.js" defer></script>
         <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -15,14 +13,12 @@
     <body>
 
         <header>
-
             <ul class="sidenav">
                 <img src="welcomemain.png" width="25%">
                 <li><a class="open-button" onclick="showLogin()">Log-In</a></li>
                 <li><a class="active" href="#login">Log-in</a></li>
                 <li><a href="#about">Create-Events</a></li>
               </ul>
-
         </header>
 
         <div id="divsec1">
@@ -32,12 +28,8 @@
         <button type="submit"><i class="fa fa-search"></i></button>
         </main>
         </div>
-
-
          <!-- Second Bottom of the Div -->
    <div id="divsec2">
-
-
    <!-- Slideshow container -->
     <div class="slideshowdiv">
     <!-- Full-width images with number and caption text -->
@@ -77,120 +69,5 @@
 
 </footer>
 
-<div class="formpopup" id="loginform">
-  <form action="/action_page.php" class="formdiv">
-    <h2>Login</h2>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="close_form()">Close</button>
-  </form>
-
-
-
-
-
-</div>
-
-<div id="Login" class="modal">
-
-
-  <form class="modal-content">
-
-
-  <div class="container">
-
-      <!-- Headings -->
-      <h2>Login to WDC Social Event System </h2>
-      <p class="signup">New around here? Create an account. <a href="#">Join Us!</a> </p>
-      <!-- Username -->
-      Username: <br />
-      <input type="text" name="Uname" placeholder="Email or Username" required>
-
-      <!-- Password-->
-      Password:<br />
-      <input type="password" name="psw" placeholder="Password" required>
-
-      <!-- This will be used later when writing SESSIONS, tick=save_sessions, untick=not_save_sessions -->
-      <label>
-          <p>Remember Me
-          <input type="checkbox" checked="checked" name="remember-session">
-          </p>
-      </label>
-
-      <!-- Actual button to the send data to verify whether users exists-->
-      <button type="login">Login</button>
-
-      <hr />
-      <!-- Login with Social Media -->
-      <div class="socialMedia">
-          <button>Continue with Google</button>
-          <button>Continue with Facebook</button>
-      </div>
-
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-
-      <button onclick="returnMain()" class="cancel_button">Cancel</button>
-      <span class="psw"><a href="#">Forgot Password?</a></span>
-
-  </div>
-
-  </form>
-</div>
-
-
-
-
-<div id="Signup" class="modal">
-
-
-  <form class="modal-content">
-
-      <div class="container">
-
-      <!-- Headings -->
-      <h2>Login to WDC Social Event System </h2>
-      <p class="signup">Already have an account? <a href="#">Sign in!</a> </p>
-      <!-- Username -->
-      Username: <br />
-      <input type="text" name="Uname" placeholder="Email or Username" required>
-
-      <!-- Password-->
-      Password:<br />
-      <input type="password" name="psw" placeholder="Password" required>
-
-      <!-- This will be used later when writing SESSIONS, tick=save_sessions, untick=not_save_sessions -->
-      <label>
-          <p>Remember Me
-          <input type="checkbox" checked="checked" name="remember-session">
-          </p>
-      </label>
-
-      <!-- Actual button to the send data to verify whether users exists-->
-      <button type="login">Sign Up</button>
-
-      <hr />
-      <!-- Login with Social Media -->
-      <div class="socialMedia">
-          <button>Continue with Google</button>
-          <button>Continue with Facebook</button>
-      </div>
-
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-
-      <button onclick="returnMain()" class="cancel_button">Cancel</button>
-      <span class="psw"><a href="#">Forgot Password?</a></span>
-
-  </div>
-  </form>
 
 </html>
