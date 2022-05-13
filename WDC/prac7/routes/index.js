@@ -6,19 +6,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* Task 1.1 */
-router.get('/brew',function(req,res,next){
-  if(req.query.drink=="tea")
-  {
-    res.send('A delicious cup of tea!');
-  } else if(req.query.drink=="coffee"){
-    res.status(418).send();
-  } else {
-    res.status(400).send();
-  }
 
+var a = 1;
+router.get('/cookie', function(req, res) {
+    if(req.cookies === "undefined" || !"task3_1" )
+    {
+        res.cookie('task3_1', 1);
+        res.send();
+    }else{
+        res.cookie('task3_1', a++);
+        res.send();
+    }
 });
-
-
 
 module.exports = router;
