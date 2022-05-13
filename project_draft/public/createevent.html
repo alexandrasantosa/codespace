@@ -2,13 +2,17 @@
 <html lang="en">
     <head>
         <title>Create Event</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/createevent.css">
+        <script src="/javascripts/createevent.js" defer></script>
+
     </head>
 <body>
 
     <header>
-
+ <p>Navigation 1 will be here</p>
     </header>
-
+ <div id="app">
     <main>
         <h1>Create Events</h1>
     </main>
@@ -20,7 +24,16 @@
         <input type="submit" value="Submit">
     </form>
 
+    <div id="main1">
+ <h3> Online or Offline </h3>
+ <p id="choice">{{choose}}</p>
+<button class="pure-button pure-u-1-4" onclick="vueinst.choose='Online';">Online</button>
+<button class="pure-button pure-u-1-4" onclick="vueinst.choose='Offline';">Offline</button>
+    </div>
 
+
+
+</div>
 </body>
 
 
