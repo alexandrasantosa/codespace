@@ -47,10 +47,19 @@ router.post('/combine', function(req, res) {
 });
 
 
-var n=1;
-router.get('/cookie',function(req,res){
-    if req
-})
-
+/*Task 3-1*/
+let cookies='';
+let a=1;
+router.get('/cookie',function(req,res,next){
+  if(cookies==''){
+    cookies='task3_1';
+    res.cookie(cookies,a);
+    res.end('cookie');
+  } else if ( cookies=="task3_1"){
+    c++;
+    res.cookie(cookies,a);
+    res.end('cookie');
+  }
+});
 
 module.exports = router;
