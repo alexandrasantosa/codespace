@@ -56,7 +56,7 @@ router.get('/cookie',function(req,res,next){
     res.cookie(cookies,a);
     res.end('cookie');
   } else if ( cookies=="task3_1"){
-    c++;
+    a++;
     res.cookie(cookies,a);
     res.end('cookie');
   }
