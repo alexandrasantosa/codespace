@@ -37,13 +37,13 @@ router.post('/pass-it-on', function(req, res, next) {
 });
 
 
-var comb;
+var output;
 router.post('/combine', function(req, res) {
-    let comb="";
+    let output="";
     for(var i=0; i<(req.body.lines.length); i++){
-    comb += (req.body.lines[i] + req.body.suffix + "\n");
+    output+= (req.body.lines[i] + req.body.suffix + "\n");
     }
-    res.send(comb);
+    res.send(output);
 });
 
 module.exports = router;
