@@ -12,6 +12,15 @@ router.post('/*', function(req, res, next) {
   next();
 });
 
+/*Task 2-3*/
+router.post('/*', function(req, res, next) {
+if(req.get('Content-Type')!= req.is('application/json'))
+{
+res.send(412);
+} else {
+  next();
+    }
+});
 
 
 module.exports = router;
