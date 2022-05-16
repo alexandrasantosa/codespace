@@ -37,11 +37,11 @@ router.post('/pass-it-on', function(req, res, next) {
 });
 
 
-var output;
+
 router.post('/combine', function(req, res) {
     let output="";
     for(var i=0; i<(req.body.lines.length); i++){
-    output+= (req.body.lines[i] + req.body.suffix + "\n");
+    output += (req.body.lines[i] + req.body.suffix + "\n");
     }
     res.send(output);
 });
