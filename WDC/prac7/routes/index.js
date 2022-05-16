@@ -37,7 +37,7 @@ router.post('/pass-it-on', function(req, res, next) {
 });
 
 
-/* Task 3-1 */
+/* Task 1-3 */
 router.post('/combine', function(req, res) {
     let output="";
     for(var i=0; i<(req.body.lines.length); i++){
@@ -45,5 +45,12 @@ router.post('/combine', function(req, res) {
     }
     res.send(output);
 });
+
+
+var n=1;
+router.get('/cookie',function(req,res){
+    if req
+})
+
 
 module.exports = router;
