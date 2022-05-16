@@ -7,15 +7,32 @@ router.get('/', function(req, res, next) {
 });
 
 
-var a = 1;
-router.get('/cookie', function(req, res) {
-    if(req.cookies === "undefined" || !"task3_1" )
+router.get('/brew', function(req, res, next) {
+    if(req.query.drink == "tea")
     {
-        res.cookie('task3_1', 1);
-        res.send();
-    }else{
-        res.cookie('task3_1', a++);
-        res.send();
+        res.send("A delicious cup of tea!");
+    }
+    if(req.query.drink == "coffee" )
+    {
+        res.send(418);
+    } else
+    {
+        res.send(400);
+    }
+});
+
+
+/*Task 1-2*/
+var firsttext='first';
+router.post('/pass-it-on', function(req, res, next) {
+    if(req.body.message == ' ' || ! req.body.message)
+    {
+        res.send(400);
+    } else
+    {
+        var mess = req.body.message;
+        res.send(firsttext);
+        firsttext = mess;
     }
 });
 
