@@ -25,6 +25,27 @@ router.get('/brew', function(req, res, next) {
 
 /*Task 1-2*/
 var c=0;
+var prev='';
+router.post('/pass-it-on',function(req,res,next){
+  var b_mess=req.body.message;
+  if(b_mess==''){
+    res.status(400).send();
+  }
+  else {
+    if (c>0){
+     res.send(prev);
+     prev=b_mess;
+      c++;
+  } else {
+    if (c ==0 && b_mes!=''){
+      res.send('first');
+      prev=b_mess;
+      c++;
+    }
+  }
+  }
+
+});
 
 /*Task 1-3*/
 router.post('/combine',function(req,res){
@@ -33,7 +54,7 @@ router.post('/combine',function(req,res){
     output += (req.body.lines[i] + req.body.suffix + "\n");
   }
   res.send(output);
-})
+});
 
 
 /*Task 3-1*/
