@@ -35,12 +35,12 @@ router.post('/pass-it-on',function(req,res,next){
     if (c>0){
      res.send(prev);
      prev=b_mess;
-      c++;
+      c++
   } else {
-    if (c ==0 && b_mes!=''){
+    if (c ==0 && b_mess!=''){
       res.send('first');
       prev=b_mess;
-      c++;
+      c++
     }
   }
   }
