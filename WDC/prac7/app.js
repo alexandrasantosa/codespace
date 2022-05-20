@@ -14,7 +14,7 @@ var a = 1;
 app.use(function(req, res, next){
     console.log(`Received ${a} requests`);
     a ++;
-    next();
+    res.send();
 });
 
 // view engine setup
