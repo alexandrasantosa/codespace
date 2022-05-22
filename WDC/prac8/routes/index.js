@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /*Task2-1*/
 router.get('/actor',function(req,res,next){
-  req.pool.getConnection(function(err.connection){
+  req.pool.getConnection(function(err,connection){
     if(err) {
       res.sendStatus(500);
       return;
@@ -28,7 +28,7 @@ router.get('/actor',function(req,res,next){
 router.post('/add-actor', function(req, res, next) {
   var firstName = req.body.firstName;
   var lastName = req.body.lastName;
-req.pool.getConnection( function(err,connection){
+  req.pool.getConnection( function(err,connection){
       if(err) {
           res.sendStatus(500);
           return;
