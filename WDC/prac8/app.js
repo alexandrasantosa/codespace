@@ -8,6 +8,19 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+var mysql = require('mysql');
+var dbConnectionPool = mysql.createPool({
+    host: '127.0.0.1',
+    database: 'sakila',
+    username: 'root',
+    password: ''
+});
+
+app.use(function(req,res,next){
+    //console.log('holl');
+    req.pool = dbConnectionPool;
+    next();
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
