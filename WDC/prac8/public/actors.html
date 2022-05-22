@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Actors</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" crossorigin="anonymous">
+    <script src="/javascripts/actors.js"></script>
     <style>
 
       main, header, footer {
@@ -17,7 +18,7 @@
 
     </style>
   </head>
-  <body>
+  <body onload="get_actor()">
     <header><h1>Actors!</h1></header>
 
     <main class="pure-g">
@@ -49,7 +50,7 @@
               <input type="text" id="actor-first-name" placeholder="First/Given Name" />
               <label for="actor-last-name">Last Name</label>
               <input type="text" id="actor-last-name" placeholder="First/Family Name" />
-              <button type="button" class="pure-button pure-button-primary">Add</button>
+              <button onclick="add_actor()" type="button" class="pure-button pure-button-primary">Add</button>
           </fieldset>
         </form>
       </aside>
