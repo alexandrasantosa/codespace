@@ -22,7 +22,7 @@ function get_actor(){
         };
     xhttp.open("GET", "/users/actor", true);
     xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send();
+
 
 }
 
