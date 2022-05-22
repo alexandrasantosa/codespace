@@ -22,6 +22,7 @@ function get_actor(){
         };
     xhttp.open("GET", "/users/actor", true);
     xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
 
 
 }
@@ -36,7 +37,6 @@ function add_actor() {
         xhttp.onreadystatechange = function() {
 
             if (this.readyState == 4 && this.status == 200) {
-                //console.log("success");
             actors = JSON.parse(this.responseText);
 
             }
