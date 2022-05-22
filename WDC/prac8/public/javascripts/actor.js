@@ -44,7 +44,8 @@ function add_actor() {
 
         var data = {"firstName": firstName, "lastName": lastName};
 
-        xhttp.open("POST", "/add-actor", true);
+        xhttp.open("POST", "/users/add-actor", true);
         xhttp.setRequestHeader("Content-type", "application/json");
-        
+        xhttp.send(JSON.stringify(data));
+
 }
