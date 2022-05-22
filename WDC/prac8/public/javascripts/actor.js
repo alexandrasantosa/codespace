@@ -20,9 +20,9 @@ function get_actor(){
              document.getElementById("actors").innerHTML = data;
             }
         };
-    xhttp.open("GET", "/users/actor", true);
+    xhttp.open("GET", "/actor", true);
     xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send();
+
 
 }
 
