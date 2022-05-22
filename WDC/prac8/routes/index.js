@@ -37,7 +37,7 @@ req.pool.getConnection( function(err,connection){
       var query = "INSERT INTO actor(first_name, last_name) VALUES(?, ?); ";
       value = [firstName, lastName];
       connection.query(query, value,function(err, rows, fields){
-          connection.release();  
+          connection.release();
           if(err) {
               res.sendStatus(500);
               return;
