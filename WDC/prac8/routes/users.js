@@ -35,7 +35,7 @@ router.post('/add-actor', function(req, res, next) {
   // console.log(req.body);
   var firstName = req.body.firstName;
   var lastName = req.body.lastName;
-req.pool.getConnection( function(err,connection){
+  req.pool.getConnection( function(err,connection){
       if(err) {
           //console.log(err);
           res.sendStatus(500);
@@ -55,7 +55,7 @@ req.pool.getConnection( function(err,connection){
               return;
           }
           res.json(rows); // send response
-          
+
       });
   });
 });
