@@ -17,7 +17,6 @@ var dbConnectionPool = mysql.createPool({
 });
 
 app.use(function(req,res,next){
-    //console.log('holl');
     req.pool = dbConnectionPool;
     next();
 });

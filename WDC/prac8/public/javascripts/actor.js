@@ -27,25 +27,3 @@ function get_actor(){
 
 }
 
-function add_actor() {
-
-    var firstName = document.getElementById('actor-first-name').value;
-    var lastName = document.getElementById('actor-last-name').value;
-
-
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-
-            if (this.readyState == 4 && this.status == 200) {
-            actors = JSON.parse(this.responseText);
-
-            }
-        };
-
-        var data = {"firstName": firstName, "lastName": lastName};
-
-        xmlhttp.open("POST", "/users/add-actor", true);
-        xmlhttp.setRequestHeader("Content-type", "application/json");
-        xmlhttp.send(JSON.stringify(data));
-
-}
