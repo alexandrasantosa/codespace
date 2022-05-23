@@ -1,8 +1,8 @@
 var actors = [];
 function get_actor(){
-    var xhttp = new XMLHttpRequest();
+    var xmlhttp = new XMLHttpRequest();
 
-    xhttp.onreadystatechange = function() {
+    xmlhttp.onreadystatechange = function() {
             console.log("success1");
             let data = '';
             if (this.readyState == 4 && this.status == 200) {
@@ -20,9 +20,9 @@ function get_actor(){
              document.getElementById("actors").innerHTML = data;
             }
         };
-    xhttp.open("GET", "/users/actor", true);
-    xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send();
+    xmlhttp.open("GET", "/users/actor", true);
+    xmlhttp.setRequestHeader("Content-type", "application/json");
+    xmlhttp.send();
 
 
 }
@@ -33,8 +33,8 @@ function add_actor() {
     var lastName = document.getElementById('actor-last-name').value;
 
 
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
 
             if (this.readyState == 4 && this.status == 200) {
             actors = JSON.parse(this.responseText);
@@ -44,8 +44,8 @@ function add_actor() {
 
         var data = {"firstName": firstName, "lastName": lastName};
 
-        xhttp.open("POST", "/users/add-actor", true);
-        xhttp.setRequestHeader("Content-type", "application/json");
-        xhttp.send(JSON.stringify(data));
+        xmlhttp.open("POST", "/users/add-actor", true);
+        xmlhttp.setRequestHeader("Content-type", "application/json");
+        xmlhttp.send(JSON.stringify(data));
 
 }
