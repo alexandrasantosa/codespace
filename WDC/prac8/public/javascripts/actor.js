@@ -1,12 +1,11 @@
 var actors = [];
 function get_actor(){
     var xmlhttp = new XMLHttpRequest();
-
     xmlhttp.onreadystatechange = function() {
-            console.log("success1");
+            console.log("getdatabase1");
             let data = '';
             if (this.readyState == 4 && this.status == 200) {
-                console.log("success");
+                console.log("getdatabase2");
                 actors = JSON.parse(this.responseText);
 
                 for(i=0; i<actors.length; i++)
