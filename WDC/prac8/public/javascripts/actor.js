@@ -25,10 +25,10 @@ function get_actor(){
 
 }
 
-function add_actor() {
+function actor_add() {
 
-    var firstName = document.getElementById('actor-first-name').value;
-    var lastName = document.getElementById('actor-last-name').value;
+    var firstname_html = document.getElementById('actor-first-name').value;
+    var lastname_html = document.getElementById('actor-last-name').value;
 
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
@@ -37,11 +37,11 @@ function add_actor() {
             }
         };
 
-        var data = {"firstName": firstName, "lastName": lastName};
+        var data = {"firstname_html": firstname_html, "lastname_html": lastname_html};
 
         xmlhttp.open("POST", "/users/add-actor", true);
         xmlhttp.setRequestHeader("Content-type", "application/json");
-        xmlhttp.send(JSON.stringify(data));
+        xmlhttp.send();
 
 }
 
