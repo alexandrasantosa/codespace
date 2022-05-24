@@ -35,7 +35,8 @@ router.post('/addactor',function(req,res,next){
       return;
   }
   var query = "INSERT INTO actor(first_name, last_name) VALUES(?, ?); ";
-  connection.query(query,[firstname,lastname],
+  value=[firstname,lastname];
+  connection.query(query,value,
     function(error, rows, fields){
     connection.release();
     if(error) {
