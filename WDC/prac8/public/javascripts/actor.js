@@ -2,21 +2,19 @@ var actors = [];
 function get_actor(){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-            console.log("getdatabase1");
-            let data = '';
+            let d = '';
             if (this.readyState == 4 && this.status == 200) {
-                console.log("getdatabase2");
+                console.log("getdatabase1");
                 actors = JSON.parse(this.responseText);
-
                 for(i=0; i<actors.length; i++)
                 {
-                    data = data +
+                    d = d +
                     `<tr>
                     <td>${actors[i].first_name}</td>
                     <td>${actors[i].last_name}</td>
                     </tr>`;
                 }
-             document.getElementById("actors").innerHTML = data;
+             document.getElementById("actors").innerHTML = d;
             }
         };
     xmlhttp.open("GET", "/users/actor", true);
