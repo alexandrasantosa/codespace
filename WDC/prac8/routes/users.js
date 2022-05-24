@@ -44,8 +44,7 @@ router.post('/add-actor', function(req, res, next) {
 
 
       var query = "INSERT INTO actor(first_name, last_name) VALUES(?, ?); ";
-      value = [firstName, lastName];
-
+      value = [firstname, lastName];
       connection.query(query, value,
           function(err, rows, fields){
           connection.release();  //release connection
