@@ -25,7 +25,7 @@ function show_actor(){
 function actor_add(){
     var firstname = document.getElementById('actor-first-name').value;
     var lastname = document.getElementById('actor-last-name').value;
-    console.log(firstname, lastname);
+    //console.log(firstname, lastname);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -36,7 +36,7 @@ function actor_add(){
     };
 
     var data={"firstname":firstname,"lastname":lastname};
-    console.log(data);
+    //console.log(data);
     xmlhttp.open("POST", "/users/addactor", true);
     xmlhttp.setRequestHeader("Content-type", "application/json");
     xmlhttp.send(JSON.stringify(data));
