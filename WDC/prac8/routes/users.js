@@ -28,7 +28,7 @@ router.get('/actor', function(req, res, next){
 
 router.post('/addactor',function(req,res,next){
   var firstname=req.body.firstname;
-  var lastname=req.body.firstname;
+  var lastname=req.body.lastname;
   req.pool.getConnection(function(error,connection){
     if(error) {
       res.sendStatus(500);
