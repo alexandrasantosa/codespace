@@ -27,8 +27,16 @@ function actor_add(){
     var lastname = document.getElementById('actor-last-name').value;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        actor_initial = JSON.parse(this.responseText);
 
+       }
 
-}
+    };
+
+    var data={"firstname":firstname,"lastname":lastname};
+    xmlhttp.open("POST", "/users/addactor", true);
+    xmlhttp.setRequestHeader("Content-type", "application/json");
+    xmlhttp.send(JSON.stringify(data));
 
 }

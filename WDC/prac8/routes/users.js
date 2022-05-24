@@ -36,11 +36,18 @@ router.post('/addactor',function(req,res,next){
   }
   var query = "INSERT INTO actor(first_name, last_name) VALUES(?, ?); ";
   connection.query(query,[firstname,lastname],
-    )
+    function(error, rows, fields){
+    connection.release();
+    if(error) {
+        res.sendStatus(500);
+        return;
+    }
+    res.json(rows);
+  });
 
-  })
+  });
 
-})
+});
 
 
 
