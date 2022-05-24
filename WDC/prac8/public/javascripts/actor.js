@@ -7,8 +7,7 @@ function show_actor(){
                 actor_initial = JSON.parse(this.responseText);
                 for(i=0; i<actor_initial.length; i++)
                 {
-                    d = d +
-                    `<tr>
+                    d = d +`<tr>
                     <td>${actor_initial[i].first_name}</td>
                     <td>${actor_initial[i].last_name}</td>
                     </tr>`;
