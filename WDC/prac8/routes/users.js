@@ -8,16 +8,16 @@ router.get('/', function(req, res, next) {
 
 /* Task2-1 */
 router.get('/actor', function(req, res, next){
-  req.pool.getConnection( function(err,connection){
-      if(err) {
+  req.pool.getConnection( function(error,connection){
+      if(error) {
           res.sendStatus(500);
           return;
       }
       //squery to get all the last name and last name from actor
       var query = `SELECT first_name, last_name FROM actor;`;
-      connection.query(query, function(err, rows, fields){
+      connection.query(query, function(error, rows, fields){
           connection.release();
-          if(err) {
+          if(error) {
               res.sendStatus(500);
               return;
           }

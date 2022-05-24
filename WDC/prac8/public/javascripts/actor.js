@@ -1,5 +1,5 @@
 var actors = [];
-function get_actor(){
+function show_actor(){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
             let d = '';
