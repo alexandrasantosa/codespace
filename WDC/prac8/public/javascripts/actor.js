@@ -35,7 +35,7 @@ function actor_add(){
 
     };
 
-    var data={"firstname":firstname,"lastname1":lastname};
+    var data={"firstname":firstname,"lastname":lastname};
     console.log(data);
     xmlhttp.open("POST", "/users/addactor", true);
     xmlhttp.setRequestHeader("Content-type", "application/json");
