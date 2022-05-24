@@ -22,4 +22,13 @@ function show_actor(){
 }
 
 
+function actor_add(){
+    var firstname = document.getElementById('actor-first-name').value;
+    var lastname = document.getElementById('actor-last-name').value;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
 
+
+}
+
+}
