@@ -25,23 +25,5 @@ function get_actor(){
 
 }
 
-function actor_add() {
 
-    var firstname_html = document.getElementById('actor-first-name').value;
-    var lastname_html = document.getElementById('actor-last-name').value;
-
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            actors = JSON.parse(this.responseText);
-            }
-        };
-
-        var data = {"firstname_html": firstname_html, "lastname_html": lastname_html};
-
-        xmlhttp.open("POST", "/users/add-actor", true);
-        xmlhttp.setRequestHeader("Content-type", "application/json");
-        xmlhttp.send();
-
-}
 

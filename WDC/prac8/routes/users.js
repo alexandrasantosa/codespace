@@ -6,58 +6,28 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
+/* Task2-1 */
 router.get('/actor', function(req, res, next){
-
-  //console.log('actor get');
   req.pool.getConnection( function(err,connection){
       if(err) {
-          //console.log(err);
           res.sendStatus(500);
           return;
       }
-      //console.log('actor get2');
+      //squery to get all the last name and last name from actor
       var query = `SELECT first_name, last_name FROM actor;`;
       connection.query(query, function(err, rows, fields){
-          connection.release();  //release connection
+          connection.release();
           if(err) {
-              //console.log(err);
               res.sendStatus(500);
               return;
           }
-          //console.log(rows);
-          res.json(rows); // send response
+          res.json(rows);
       });
   });
 });
 
 
-router.post('/add-actor', function(req, res, next) {
-  // console.log(req.body);
-  var firstName = req.body.firstName;
-  var lastName = req.body.lastName;
-  req.pool.getConnection( function(err,connection){
-      if(err) {
-          //console.log(err);
-          res.sendStatus(500);
-          return;
-      }
 
-
-      var query = "INSERT INTO actor(first_name, last_name) VALUES(?, ?); ";
-      value = [firstname, lastName];
-      connection.query(query, value,
-          function(err, rows, fields){
-          connection.release();  //release connection
-          if(err) {
-              // console.log(err);
-              res.sendStatus(500);
-              return;
-          }
-          res.json(rows); // send response
-
-      });
-  });
-});
 
 
 
