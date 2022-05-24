@@ -25,6 +25,7 @@ function show_actor(){
 function actor_add(){
     var firstname = document.getElementById('actor-first-name').value;
     var lastname = document.getElementById('actor-last-name').value;
+    console.log(firstname, lastname);
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
