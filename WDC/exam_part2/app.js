@@ -12,6 +12,7 @@ var app = express();
 
 var dbConnectionPool = mysql.createPool({
     host: 'localhost',
+    database: 'wdc_exam_part2',
     multipleStatements: true
 });
 app.use(function(req, res, next) {
